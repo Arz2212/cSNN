@@ -9,6 +9,8 @@ Note that this code was written on/run on an Ubuntu 22.04.2 LTS and
 assumes that you have Python 3.10.6, jax/jaxlib 0.4.28 (for Cuda-12), and 
 ngclearn 1.2.b3 (with ngcsimlib 0.3.b4) successfully installed on your system.
 
+Note: CSDP is also featured as a model exhibit in <a href="https://github.com/NACLab/ngc-museum"><i>ngc-museum</i></a>
+
 ## Installation
 
 If you have Python 3.10.6 installed, you can automatically configure the needed dependencies 
