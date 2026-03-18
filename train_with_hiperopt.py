@@ -184,7 +184,7 @@ def run_trial(param, return_dict):
                   batch_size=batch_size, eta_w=eta_w, T=T, dt=dt, algo_type=algo_type,
                   exp_dir=exp_dir, learn_recon=learn_recon, A_m=param['A_minus'], A_p=param['A_plus'])
 
-    for j in range(n_batches // 2000):
+    for j in range(n_batches):
         print(1)
         dkey, *subkeys = random.split(dkey, 2)
         idx = j * batch_size
@@ -239,8 +239,8 @@ def epoh(param):
 
 
 space = {
-    'A_plus': hp.uniform('A_plus', 0.001, 0.1),
-    'A_minus': hp.uniform('A_minus', 0.001, 0.1)
+    'A_plus': hp.uniform('A_plus', 0.001, 1),
+    'A_minus': hp.uniform('A_minus', 0.001, 1)
 }
 
 if __name__ == "__main__":
@@ -253,7 +253,7 @@ if __name__ == "__main__":
         fn=epoh,
         space=space,
         algo=tpe.suggest,
-        max_evals=10,
+        max_evals=10000,
     )
 
     print("\nЛучшие найденные параметры STDP:")
