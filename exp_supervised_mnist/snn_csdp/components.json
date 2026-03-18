@@ -20,8 +20,8 @@
                     784,
                     3000
                 ],
-                "A_plus": 5.0,
-                "A_minus": 5.0,
+                "A_plus": 0.05,
+                "A_minus": 0.05,
                 "eta": 0.002,
                 "pretrace_target": 1.0,
                 "weight_init": {
@@ -30,7 +30,7 @@
                     "amax": 1.0
                 },
                 "w_bound": 1.0,
-                "tau_w": 5.0
+                "tau_w": 0.0
             }
         },
         "/Circuit/z1": {

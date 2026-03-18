@@ -1,5 +1,5 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
-New Log 03/18/2026 09:51:27
+New Log 03/18/2026 13:18:59
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 DEBUG - resist_scale is missing from RateCell's help method
 DEBUG - shape is missing from RateCell's help method
@@ -74,7 +74,352 @@ INFO - Loading module from ngcsimlib.operations.overwrite
 INFO - Loading module from ngcsimlib.operations.summation
 WARNING - Context doesn't have a save command registered. Saving all components
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
-New Log 03/18/2026 10:19:28
+New Log 03/18/2026 13:25:03
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+DEBUG - resist_scale is missing from RateCell's help method
+DEBUG - shape is missing from RateCell's help method
+DEBUG - shape is missing from GaussianErrorCell's help method
+DEBUG - use_online_predictor is missing from RewardErrorCell's help method
+DEBUG - resources_init is missing from STPDenseSynapse's help method
+DEBUG - w_decay is missing from STDPSynapse's help method
+DEBUG - w_bound is missing from STDPSynapse's help method
+DEBUG - w_bound is missing from TraceSTDPSynapse's help method
+DEBUG - w_bound is missing from ExpSTDPSynapse's help method
+DEBUG - A_plus is missing from EventSTDPSynapse's help method
+DEBUG - A_minus is missing from EventSTDPSynapse's help method
+DEBUG - presyn_win_len is missing from EventSTDPSynapse's help method
+DEBUG - w_bound is missing from EventSTDPSynapse's help method
+DEBUG - batch_size is missing from ConvSynapse's help method
+DEBUG - batch_size is missing from ConvSynapse's help method
+DEBUG - batch_size is missing from DeconvSynapse's help method
+DEBUG - batch_size is missing from DeconvSynapse's help method
+DEBUG - batch_size is missing from HebbianConvSynapse's help method
+DEBUG - batch_size is missing from HebbianDeconvSynapse's help method
+DEBUG - batch_size is missing from TraceSTDPConvSynapse's help method
+DEBUG - pretrace_target is missing from MSTDPETSynapse's help method
+DEBUG - w_bound is missing from MSTDPETSynapse's help method
+DEBUG - elg_decay is missing from EligibilityTrace's help method
+DEBUG - integration_type is missing from EligibilityTrace's help method
+DEBUG - tau is missing from LatencyCell's help method
+DEBUG - eta is missing from CSDPSynapse's help method
+DEBUG - w_bound is missing from CSDPSynapse's help method
+DEBUG - is_nonnegative is missing from CSDPSynapse's help method
+DEBUG - w_decay is missing from CSDPSynapse's help method
+DEBUG - update_sign is missing from CSDPSynapse's help method
+DEBUG - w_sign is missing from CSDPSynapse's help method
+DEBUG - is_hollow is missing from CSDPSynapse's help method
+DEBUG - soft_bound is missing from CSDPSynapse's help method
+DEBUG - gamma_depress is missing from CSDPSynapse's help method
+DEBUG - optim_type is missing from CSDPSynapse's help method
+INFO - Failed to serialize "key" in /Circuit/z0
+INFO - Failed to serialize "key" in /Circuit/W1
+INFO - W1 is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/z1
+INFO - Failed to serialize "key" in /Circuit/W2
+INFO - W2 is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/z2
+INFO - Failed to serialize "key" in /Circuit/V2
+INFO - V2 is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/M1
+INFO - M1 is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/M2
+INFO - M2 is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/zy
+INFO - Failed to serialize "key" in /Circuit/C2
+INFO - C2 is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/C3
+INFO - C3 is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/zR
+INFO - Failed to serialize "key" in /Circuit/R1
+INFO - R1 is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/z3
+INFO - Failed to serialize "key" in /Circuit/V3y
+INFO - V3y is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/V2y
+INFO - V2y is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/tr0
+INFO - Failed to serialize "key" in /Circuit/tr1
+INFO - Failed to serialize "key" in /Circuit/tr2
+INFO - Failed to serialize "key" in /Circuit/tr3
+DEBUG - TraceSTDPSynapse is using the resolver from DenseSynapse for resolving key "advance_state"
+DEBUG - HebbianSynapse is using the resolver from DenseSynapse for resolving key "advance_state"
+DEBUG - HebbianSynapse is using the resolver from DenseSynapse for resolving key "advance_state"
+DEBUG - HebbianSynapse is using the resolver from DenseSynapse for resolving key "advance_state"
+INFO - Returning already existing context: Circuit
+WARNING - Failed to add z0 to current context as it already exists
+INFO - W1 is using default bias value of zero (no bias kernel provided)!
+WARNING - Failed to add W1 to current context as it already exists
+WARNING - Failed to add z1 to current context as it already exists
+INFO - W2 is using default bias value of zero (no bias kernel provided)!
+WARNING - Failed to add W2 to current context as it already exists
+WARNING - Failed to add z2 to current context as it already exists
+INFO - V2 is using default bias value of zero (no bias kernel provided)!
+WARNING - Failed to add V2 to current context as it already exists
+INFO - M1 is using default bias value of zero (no bias kernel provided)!
+WARNING - Failed to add M1 to current context as it already exists
+INFO - M2 is using default bias value of zero (no bias kernel provided)!
+WARNING - Failed to add M2 to current context as it already exists
+WARNING - Failed to add zy to current context as it already exists
+WARNING - Failed to add ey to current context as it already exists
+INFO - C2 is using default bias value of zero (no bias kernel provided)!
+WARNING - Failed to add C2 to current context as it already exists
+INFO - C3 is using default bias value of zero (no bias kernel provided)!
+WARNING - Failed to add C3 to current context as it already exists
+WARNING - Failed to add zR to current context as it already exists
+WARNING - Failed to add eR to current context as it already exists
+INFO - R1 is using default bias value of zero (no bias kernel provided)!
+WARNING - Failed to add R1 to current context as it already exists
+WARNING - Failed to add z3 to current context as it already exists
+INFO - V3y is using default bias value of zero (no bias kernel provided)!
+WARNING - Failed to add V3y to current context as it already exists
+INFO - V2y is using default bias value of zero (no bias kernel provided)!
+WARNING - Failed to add V2y to current context as it already exists
+WARNING - Failed to add g1 to current context as it already exists
+WARNING - Failed to add g2 to current context as it already exists
+WARNING - Failed to add z0_prev to current context as it already exists
+WARNING - Failed to add z1_prev to current context as it already exists
+WARNING - Failed to add z2_prev to current context as it already exists
+WARNING - Failed to add z3_prev to current context as it already exists
+WARNING - Failed to add tr0 to current context as it already exists
+WARNING - Failed to add tr1 to current context as it already exists
+WARNING - Failed to add tr2 to current context as it already exists
+WARNING - Failed to add tr3 to current context as it already exists
+DEBUG - TraceSTDPSynapse is using the resolver from DenseSynapse for resolving key "advance_state"
+DEBUG - HebbianSynapse is using the resolver from DenseSynapse for resolving key "advance_state"
+DEBUG - HebbianSynapse is using the resolver from DenseSynapse for resolving key "advance_state"
+DEBUG - HebbianSynapse is using the resolver from DenseSynapse for resolving key "advance_state"
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+New Log 03/18/2026 13:26:27
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+DEBUG - resist_scale is missing from RateCell's help method
+DEBUG - shape is missing from RateCell's help method
+DEBUG - shape is missing from GaussianErrorCell's help method
+DEBUG - use_online_predictor is missing from RewardErrorCell's help method
+DEBUG - resources_init is missing from STPDenseSynapse's help method
+DEBUG - w_decay is missing from STDPSynapse's help method
+DEBUG - w_bound is missing from STDPSynapse's help method
+DEBUG - w_bound is missing from TraceSTDPSynapse's help method
+DEBUG - w_bound is missing from ExpSTDPSynapse's help method
+DEBUG - A_plus is missing from EventSTDPSynapse's help method
+DEBUG - A_minus is missing from EventSTDPSynapse's help method
+DEBUG - presyn_win_len is missing from EventSTDPSynapse's help method
+DEBUG - w_bound is missing from EventSTDPSynapse's help method
+DEBUG - batch_size is missing from ConvSynapse's help method
+DEBUG - batch_size is missing from ConvSynapse's help method
+DEBUG - batch_size is missing from DeconvSynapse's help method
+DEBUG - batch_size is missing from DeconvSynapse's help method
+DEBUG - batch_size is missing from HebbianConvSynapse's help method
+DEBUG - batch_size is missing from HebbianDeconvSynapse's help method
+DEBUG - batch_size is missing from TraceSTDPConvSynapse's help method
+DEBUG - pretrace_target is missing from MSTDPETSynapse's help method
+DEBUG - w_bound is missing from MSTDPETSynapse's help method
+DEBUG - elg_decay is missing from EligibilityTrace's help method
+DEBUG - integration_type is missing from EligibilityTrace's help method
+DEBUG - tau is missing from LatencyCell's help method
+DEBUG - eta is missing from CSDPSynapse's help method
+DEBUG - w_bound is missing from CSDPSynapse's help method
+DEBUG - is_nonnegative is missing from CSDPSynapse's help method
+DEBUG - w_decay is missing from CSDPSynapse's help method
+DEBUG - update_sign is missing from CSDPSynapse's help method
+DEBUG - w_sign is missing from CSDPSynapse's help method
+DEBUG - is_hollow is missing from CSDPSynapse's help method
+DEBUG - soft_bound is missing from CSDPSynapse's help method
+DEBUG - gamma_depress is missing from CSDPSynapse's help method
+DEBUG - optim_type is missing from CSDPSynapse's help method
+INFO - Failed to serialize "key" in /Circuit/z0
+INFO - Failed to serialize "key" in /Circuit/W1
+INFO - W1 is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/z1
+INFO - Failed to serialize "key" in /Circuit/W2
+INFO - W2 is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/z2
+INFO - Failed to serialize "key" in /Circuit/V2
+INFO - V2 is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/M1
+INFO - M1 is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/M2
+INFO - M2 is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/zy
+INFO - Failed to serialize "key" in /Circuit/C2
+INFO - C2 is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/C3
+INFO - C3 is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/zR
+INFO - Failed to serialize "key" in /Circuit/R1
+INFO - R1 is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/z3
+INFO - Failed to serialize "key" in /Circuit/V3y
+INFO - V3y is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/V2y
+INFO - V2y is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/tr0
+INFO - Failed to serialize "key" in /Circuit/tr1
+INFO - Failed to serialize "key" in /Circuit/tr2
+INFO - Failed to serialize "key" in /Circuit/tr3
+DEBUG - TraceSTDPSynapse is using the resolver from DenseSynapse for resolving key "advance_state"
+DEBUG - HebbianSynapse is using the resolver from DenseSynapse for resolving key "advance_state"
+DEBUG - HebbianSynapse is using the resolver from DenseSynapse for resolving key "advance_state"
+DEBUG - HebbianSynapse is using the resolver from DenseSynapse for resolving key "advance_state"
+INFO - Returning already existing context: Circuit
+WARNING - Failed to add z0 to current context as it already exists
+INFO - W1 is using default bias value of zero (no bias kernel provided)!
+WARNING - Failed to add W1 to current context as it already exists
+WARNING - Failed to add z1 to current context as it already exists
+INFO - W2 is using default bias value of zero (no bias kernel provided)!
+WARNING - Failed to add W2 to current context as it already exists
+WARNING - Failed to add z2 to current context as it already exists
+INFO - V2 is using default bias value of zero (no bias kernel provided)!
+WARNING - Failed to add V2 to current context as it already exists
+INFO - M1 is using default bias value of zero (no bias kernel provided)!
+WARNING - Failed to add M1 to current context as it already exists
+INFO - M2 is using default bias value of zero (no bias kernel provided)!
+WARNING - Failed to add M2 to current context as it already exists
+WARNING - Failed to add zy to current context as it already exists
+WARNING - Failed to add ey to current context as it already exists
+INFO - C2 is using default bias value of zero (no bias kernel provided)!
+WARNING - Failed to add C2 to current context as it already exists
+INFO - C3 is using default bias value of zero (no bias kernel provided)!
+WARNING - Failed to add C3 to current context as it already exists
+WARNING - Failed to add zR to current context as it already exists
+WARNING - Failed to add eR to current context as it already exists
+INFO - R1 is using default bias value of zero (no bias kernel provided)!
+WARNING - Failed to add R1 to current context as it already exists
+WARNING - Failed to add z3 to current context as it already exists
+INFO - V3y is using default bias value of zero (no bias kernel provided)!
+WARNING - Failed to add V3y to current context as it already exists
+INFO - V2y is using default bias value of zero (no bias kernel provided)!
+WARNING - Failed to add V2y to current context as it already exists
+WARNING - Failed to add g1 to current context as it already exists
+WARNING - Failed to add g2 to current context as it already exists
+WARNING - Failed to add z0_prev to current context as it already exists
+WARNING - Failed to add z1_prev to current context as it already exists
+WARNING - Failed to add z2_prev to current context as it already exists
+WARNING - Failed to add z3_prev to current context as it already exists
+WARNING - Failed to add tr0 to current context as it already exists
+WARNING - Failed to add tr1 to current context as it already exists
+WARNING - Failed to add tr2 to current context as it already exists
+WARNING - Failed to add tr3 to current context as it already exists
+DEBUG - TraceSTDPSynapse is using the resolver from DenseSynapse for resolving key "advance_state"
+DEBUG - HebbianSynapse is using the resolver from DenseSynapse for resolving key "advance_state"
+DEBUG - HebbianSynapse is using the resolver from DenseSynapse for resolving key "advance_state"
+DEBUG - HebbianSynapse is using the resolver from DenseSynapse for resolving key "advance_state"
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+New Log 03/18/2026 13:29:59
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+DEBUG - resist_scale is missing from RateCell's help method
+DEBUG - shape is missing from RateCell's help method
+DEBUG - shape is missing from GaussianErrorCell's help method
+DEBUG - use_online_predictor is missing from RewardErrorCell's help method
+DEBUG - resources_init is missing from STPDenseSynapse's help method
+DEBUG - w_decay is missing from STDPSynapse's help method
+DEBUG - w_bound is missing from STDPSynapse's help method
+DEBUG - w_bound is missing from TraceSTDPSynapse's help method
+DEBUG - w_bound is missing from ExpSTDPSynapse's help method
+DEBUG - A_plus is missing from EventSTDPSynapse's help method
+DEBUG - A_minus is missing from EventSTDPSynapse's help method
+DEBUG - presyn_win_len is missing from EventSTDPSynapse's help method
+DEBUG - w_bound is missing from EventSTDPSynapse's help method
+DEBUG - batch_size is missing from ConvSynapse's help method
+DEBUG - batch_size is missing from ConvSynapse's help method
+DEBUG - batch_size is missing from DeconvSynapse's help method
+DEBUG - batch_size is missing from DeconvSynapse's help method
+DEBUG - batch_size is missing from HebbianConvSynapse's help method
+DEBUG - batch_size is missing from HebbianDeconvSynapse's help method
+DEBUG - batch_size is missing from TraceSTDPConvSynapse's help method
+DEBUG - pretrace_target is missing from MSTDPETSynapse's help method
+DEBUG - w_bound is missing from MSTDPETSynapse's help method
+DEBUG - elg_decay is missing from EligibilityTrace's help method
+DEBUG - integration_type is missing from EligibilityTrace's help method
+DEBUG - tau is missing from LatencyCell's help method
+DEBUG - eta is missing from CSDPSynapse's help method
+DEBUG - w_bound is missing from CSDPSynapse's help method
+DEBUG - is_nonnegative is missing from CSDPSynapse's help method
+DEBUG - w_decay is missing from CSDPSynapse's help method
+DEBUG - update_sign is missing from CSDPSynapse's help method
+DEBUG - w_sign is missing from CSDPSynapse's help method
+DEBUG - is_hollow is missing from CSDPSynapse's help method
+DEBUG - soft_bound is missing from CSDPSynapse's help method
+DEBUG - gamma_depress is missing from CSDPSynapse's help method
+DEBUG - optim_type is missing from CSDPSynapse's help method
+INFO - Failed to serialize "key" in /Circuit/z0
+INFO - Failed to serialize "key" in /Circuit/W1
+INFO - W1 is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/z1
+INFO - Failed to serialize "key" in /Circuit/W2
+INFO - W2 is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/z2
+INFO - Failed to serialize "key" in /Circuit/V2
+INFO - V2 is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/M1
+INFO - M1 is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/M2
+INFO - M2 is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/zy
+INFO - Failed to serialize "key" in /Circuit/C2
+INFO - C2 is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/C3
+INFO - C3 is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/zR
+INFO - Failed to serialize "key" in /Circuit/R1
+INFO - R1 is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/z3
+INFO - Failed to serialize "key" in /Circuit/V3y
+INFO - V3y is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/V2y
+INFO - V2y is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/tr0
+INFO - Failed to serialize "key" in /Circuit/tr1
+INFO - Failed to serialize "key" in /Circuit/tr2
+INFO - Failed to serialize "key" in /Circuit/tr3
+DEBUG - TraceSTDPSynapse is using the resolver from DenseSynapse for resolving key "advance_state"
+DEBUG - HebbianSynapse is using the resolver from DenseSynapse for resolving key "advance_state"
+DEBUG - HebbianSynapse is using the resolver from DenseSynapse for resolving key "advance_state"
+DEBUG - HebbianSynapse is using the resolver from DenseSynapse for resolving key "advance_state"
+INFO - Returning already existing context: Circuit
+WARNING - Failed to add z0 to current context as it already exists
+INFO - W1 is using default bias value of zero (no bias kernel provided)!
+WARNING - Failed to add W1 to current context as it already exists
+WARNING - Failed to add z1 to current context as it already exists
+INFO - W2 is using default bias value of zero (no bias kernel provided)!
+WARNING - Failed to add W2 to current context as it already exists
+WARNING - Failed to add z2 to current context as it already exists
+INFO - V2 is using default bias value of zero (no bias kernel provided)!
+WARNING - Failed to add V2 to current context as it already exists
+INFO - M1 is using default bias value of zero (no bias kernel provided)!
+WARNING - Failed to add M1 to current context as it already exists
+INFO - M2 is using default bias value of zero (no bias kernel provided)!
+WARNING - Failed to add M2 to current context as it already exists
+WARNING - Failed to add zy to current context as it already exists
+WARNING - Failed to add ey to current context as it already exists
+INFO - C2 is using default bias value of zero (no bias kernel provided)!
+WARNING - Failed to add C2 to current context as it already exists
+INFO - C3 is using default bias value of zero (no bias kernel provided)!
+WARNING - Failed to add C3 to current context as it already exists
+WARNING - Failed to add zR to current context as it already exists
+WARNING - Failed to add eR to current context as it already exists
+INFO - R1 is using default bias value of zero (no bias kernel provided)!
+WARNING - Failed to add R1 to current context as it already exists
+WARNING - Failed to add z3 to current context as it already exists
+INFO - V3y is using default bias value of zero (no bias kernel provided)!
+WARNING - Failed to add V3y to current context as it already exists
+INFO - V2y is using default bias value of zero (no bias kernel provided)!
+WARNING - Failed to add V2y to current context as it already exists
+WARNING - Failed to add g1 to current context as it already exists
+WARNING - Failed to add g2 to current context as it already exists
+WARNING - Failed to add z0_prev to current context as it already exists
+WARNING - Failed to add z1_prev to current context as it already exists
+WARNING - Failed to add z2_prev to current context as it already exists
+WARNING - Failed to add z3_prev to current context as it already exists
+WARNING - Failed to add tr0 to current context as it already exists
+WARNING - Failed to add tr1 to current context as it already exists
+WARNING - Failed to add tr2 to current context as it already exists
+WARNING - Failed to add tr3 to current context as it already exists
+DEBUG - TraceSTDPSynapse is using the resolver from DenseSynapse for resolving key "advance_state"
+DEBUG - HebbianSynapse is using the resolver from DenseSynapse for resolving key "advance_state"
+DEBUG - HebbianSynapse is using the resolver from DenseSynapse for resolving key "advance_state"
+DEBUG - HebbianSynapse is using the resolver from DenseSynapse for resolving key "advance_state"
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+New Log 03/18/2026 13:37:03
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 DEBUG - resist_scale is missing from RateCell's help method
 DEBUG - shape is missing from RateCell's help method
@@ -112,7 +457,313 @@ DEBUG - soft_bound is missing from CSDPSynapse's help method
 DEBUG - gamma_depress is missing from CSDPSynapse's help method
 DEBUG - optim_type is missing from CSDPSynapse's help method
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
-New Log 03/18/2026 10:19:34
+New Log 03/18/2026 13:37:13
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+DEBUG - resist_scale is missing from RateCell's help method
+DEBUG - shape is missing from RateCell's help method
+DEBUG - shape is missing from GaussianErrorCell's help method
+DEBUG - use_online_predictor is missing from RewardErrorCell's help method
+DEBUG - resources_init is missing from STPDenseSynapse's help method
+DEBUG - w_decay is missing from STDPSynapse's help method
+DEBUG - w_bound is missing from STDPSynapse's help method
+DEBUG - w_bound is missing from TraceSTDPSynapse's help method
+DEBUG - w_bound is missing from ExpSTDPSynapse's help method
+DEBUG - A_plus is missing from EventSTDPSynapse's help method
+DEBUG - A_minus is missing from EventSTDPSynapse's help method
+DEBUG - presyn_win_len is missing from EventSTDPSynapse's help method
+DEBUG - w_bound is missing from EventSTDPSynapse's help method
+DEBUG - batch_size is missing from ConvSynapse's help method
+DEBUG - batch_size is missing from ConvSynapse's help method
+DEBUG - batch_size is missing from DeconvSynapse's help method
+DEBUG - batch_size is missing from DeconvSynapse's help method
+DEBUG - batch_size is missing from HebbianConvSynapse's help method
+DEBUG - batch_size is missing from HebbianDeconvSynapse's help method
+DEBUG - batch_size is missing from TraceSTDPConvSynapse's help method
+DEBUG - pretrace_target is missing from MSTDPETSynapse's help method
+DEBUG - w_bound is missing from MSTDPETSynapse's help method
+DEBUG - elg_decay is missing from EligibilityTrace's help method
+DEBUG - integration_type is missing from EligibilityTrace's help method
+DEBUG - tau is missing from LatencyCell's help method
+DEBUG - eta is missing from CSDPSynapse's help method
+DEBUG - w_bound is missing from CSDPSynapse's help method
+DEBUG - is_nonnegative is missing from CSDPSynapse's help method
+DEBUG - w_decay is missing from CSDPSynapse's help method
+DEBUG - update_sign is missing from CSDPSynapse's help method
+DEBUG - w_sign is missing from CSDPSynapse's help method
+DEBUG - is_hollow is missing from CSDPSynapse's help method
+DEBUG - soft_bound is missing from CSDPSynapse's help method
+DEBUG - gamma_depress is missing from CSDPSynapse's help method
+DEBUG - optim_type is missing from CSDPSynapse's help method
+INFO - Failed to serialize "key" in /Circuit/z0
+INFO - Failed to serialize "key" in /Circuit/W1
+INFO - W1 is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/z1
+INFO - Failed to serialize "key" in /Circuit/W2
+INFO - W2 is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/z2
+INFO - Failed to serialize "key" in /Circuit/V2
+INFO - V2 is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/M1
+INFO - M1 is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/M2
+INFO - M2 is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/zy
+INFO - Failed to serialize "key" in /Circuit/C2
+INFO - C2 is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/C3
+INFO - C3 is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/zR
+INFO - Failed to serialize "key" in /Circuit/R1
+INFO - R1 is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/z3
+INFO - Failed to serialize "key" in /Circuit/V3y
+INFO - V3y is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/V2y
+INFO - V2y is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/tr0
+INFO - Failed to serialize "key" in /Circuit/tr1
+INFO - Failed to serialize "key" in /Circuit/tr2
+INFO - Failed to serialize "key" in /Circuit/tr3
+DEBUG - TraceSTDPSynapse is using the resolver from DenseSynapse for resolving key "advance_state"
+DEBUG - HebbianSynapse is using the resolver from DenseSynapse for resolving key "advance_state"
+DEBUG - HebbianSynapse is using the resolver from DenseSynapse for resolving key "advance_state"
+DEBUG - HebbianSynapse is using the resolver from DenseSynapse for resolving key "advance_state"
+INFO - Returning already existing context: Circuit
+WARNING - Failed to add z0 to current context as it already exists
+INFO - W1 is using default bias value of zero (no bias kernel provided)!
+WARNING - Failed to add W1 to current context as it already exists
+WARNING - Failed to add z1 to current context as it already exists
+INFO - W2 is using default bias value of zero (no bias kernel provided)!
+WARNING - Failed to add W2 to current context as it already exists
+WARNING - Failed to add z2 to current context as it already exists
+INFO - V2 is using default bias value of zero (no bias kernel provided)!
+WARNING - Failed to add V2 to current context as it already exists
+INFO - M1 is using default bias value of zero (no bias kernel provided)!
+WARNING - Failed to add M1 to current context as it already exists
+INFO - M2 is using default bias value of zero (no bias kernel provided)!
+WARNING - Failed to add M2 to current context as it already exists
+WARNING - Failed to add zy to current context as it already exists
+WARNING - Failed to add ey to current context as it already exists
+INFO - C2 is using default bias value of zero (no bias kernel provided)!
+WARNING - Failed to add C2 to current context as it already exists
+INFO - C3 is using default bias value of zero (no bias kernel provided)!
+WARNING - Failed to add C3 to current context as it already exists
+WARNING - Failed to add zR to current context as it already exists
+WARNING - Failed to add eR to current context as it already exists
+INFO - R1 is using default bias value of zero (no bias kernel provided)!
+WARNING - Failed to add R1 to current context as it already exists
+WARNING - Failed to add z3 to current context as it already exists
+INFO - V3y is using default bias value of zero (no bias kernel provided)!
+WARNING - Failed to add V3y to current context as it already exists
+INFO - V2y is using default bias value of zero (no bias kernel provided)!
+WARNING - Failed to add V2y to current context as it already exists
+WARNING - Failed to add g1 to current context as it already exists
+WARNING - Failed to add g2 to current context as it already exists
+WARNING - Failed to add z0_prev to current context as it already exists
+WARNING - Failed to add z1_prev to current context as it already exists
+WARNING - Failed to add z2_prev to current context as it already exists
+WARNING - Failed to add z3_prev to current context as it already exists
+WARNING - Failed to add tr0 to current context as it already exists
+WARNING - Failed to add tr1 to current context as it already exists
+WARNING - Failed to add tr2 to current context as it already exists
+WARNING - Failed to add tr3 to current context as it already exists
+DEBUG - TraceSTDPSynapse is using the resolver from DenseSynapse for resolving key "advance_state"
+DEBUG - HebbianSynapse is using the resolver from DenseSynapse for resolving key "advance_state"
+DEBUG - HebbianSynapse is using the resolver from DenseSynapse for resolving key "advance_state"
+DEBUG - HebbianSynapse is using the resolver from DenseSynapse for resolving key "advance_state"
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+New Log 03/18/2026 13:41:43
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+DEBUG - resist_scale is missing from RateCell's help method
+DEBUG - shape is missing from RateCell's help method
+DEBUG - shape is missing from GaussianErrorCell's help method
+DEBUG - use_online_predictor is missing from RewardErrorCell's help method
+DEBUG - resources_init is missing from STPDenseSynapse's help method
+DEBUG - w_decay is missing from STDPSynapse's help method
+DEBUG - w_bound is missing from STDPSynapse's help method
+DEBUG - w_bound is missing from TraceSTDPSynapse's help method
+DEBUG - w_bound is missing from ExpSTDPSynapse's help method
+DEBUG - A_plus is missing from EventSTDPSynapse's help method
+DEBUG - A_minus is missing from EventSTDPSynapse's help method
+DEBUG - presyn_win_len is missing from EventSTDPSynapse's help method
+DEBUG - w_bound is missing from EventSTDPSynapse's help method
+DEBUG - batch_size is missing from ConvSynapse's help method
+DEBUG - batch_size is missing from ConvSynapse's help method
+DEBUG - batch_size is missing from DeconvSynapse's help method
+DEBUG - batch_size is missing from DeconvSynapse's help method
+DEBUG - batch_size is missing from HebbianConvSynapse's help method
+DEBUG - batch_size is missing from HebbianDeconvSynapse's help method
+DEBUG - batch_size is missing from TraceSTDPConvSynapse's help method
+DEBUG - pretrace_target is missing from MSTDPETSynapse's help method
+DEBUG - w_bound is missing from MSTDPETSynapse's help method
+DEBUG - elg_decay is missing from EligibilityTrace's help method
+DEBUG - integration_type is missing from EligibilityTrace's help method
+DEBUG - tau is missing from LatencyCell's help method
+DEBUG - eta is missing from CSDPSynapse's help method
+DEBUG - w_bound is missing from CSDPSynapse's help method
+DEBUG - is_nonnegative is missing from CSDPSynapse's help method
+DEBUG - w_decay is missing from CSDPSynapse's help method
+DEBUG - update_sign is missing from CSDPSynapse's help method
+DEBUG - w_sign is missing from CSDPSynapse's help method
+DEBUG - is_hollow is missing from CSDPSynapse's help method
+DEBUG - soft_bound is missing from CSDPSynapse's help method
+DEBUG - gamma_depress is missing from CSDPSynapse's help method
+DEBUG - optim_type is missing from CSDPSynapse's help method
+INFO - Failed to serialize "key" in /Circuit/z0
+INFO - Failed to serialize "key" in /Circuit/W1
+INFO - W1 is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/z1
+INFO - Failed to serialize "key" in /Circuit/W2
+INFO - W2 is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/z2
+INFO - Failed to serialize "key" in /Circuit/V2
+INFO - V2 is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/M1
+INFO - M1 is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/M2
+INFO - M2 is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/zy
+INFO - Failed to serialize "key" in /Circuit/C2
+INFO - C2 is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/C3
+INFO - C3 is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/zR
+INFO - Failed to serialize "key" in /Circuit/R1
+INFO - R1 is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/z3
+INFO - Failed to serialize "key" in /Circuit/V3y
+INFO - V3y is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/V2y
+INFO - V2y is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/tr0
+INFO - Failed to serialize "key" in /Circuit/tr1
+INFO - Failed to serialize "key" in /Circuit/tr2
+INFO - Failed to serialize "key" in /Circuit/tr3
+DEBUG - TraceSTDPSynapse is using the resolver from DenseSynapse for resolving key "advance_state"
+DEBUG - HebbianSynapse is using the resolver from DenseSynapse for resolving key "advance_state"
+DEBUG - HebbianSynapse is using the resolver from DenseSynapse for resolving key "advance_state"
+DEBUG - HebbianSynapse is using the resolver from DenseSynapse for resolving key "advance_state"
+INFO - Returning already existing context: Circuit
+WARNING - Failed to add z0 to current context as it already exists
+INFO - W1 is using default bias value of zero (no bias kernel provided)!
+WARNING - Failed to add W1 to current context as it already exists
+WARNING - Failed to add z1 to current context as it already exists
+INFO - W2 is using default bias value of zero (no bias kernel provided)!
+WARNING - Failed to add W2 to current context as it already exists
+WARNING - Failed to add z2 to current context as it already exists
+INFO - V2 is using default bias value of zero (no bias kernel provided)!
+WARNING - Failed to add V2 to current context as it already exists
+INFO - M1 is using default bias value of zero (no bias kernel provided)!
+WARNING - Failed to add M1 to current context as it already exists
+INFO - M2 is using default bias value of zero (no bias kernel provided)!
+WARNING - Failed to add M2 to current context as it already exists
+WARNING - Failed to add zy to current context as it already exists
+WARNING - Failed to add ey to current context as it already exists
+INFO - C2 is using default bias value of zero (no bias kernel provided)!
+WARNING - Failed to add C2 to current context as it already exists
+INFO - C3 is using default bias value of zero (no bias kernel provided)!
+WARNING - Failed to add C3 to current context as it already exists
+WARNING - Failed to add zR to current context as it already exists
+WARNING - Failed to add eR to current context as it already exists
+INFO - R1 is using default bias value of zero (no bias kernel provided)!
+WARNING - Failed to add R1 to current context as it already exists
+WARNING - Failed to add z3 to current context as it already exists
+INFO - V3y is using default bias value of zero (no bias kernel provided)!
+WARNING - Failed to add V3y to current context as it already exists
+INFO - V2y is using default bias value of zero (no bias kernel provided)!
+WARNING - Failed to add V2y to current context as it already exists
+WARNING - Failed to add g1 to current context as it already exists
+WARNING - Failed to add g2 to current context as it already exists
+WARNING - Failed to add z0_prev to current context as it already exists
+WARNING - Failed to add z1_prev to current context as it already exists
+WARNING - Failed to add z2_prev to current context as it already exists
+WARNING - Failed to add z3_prev to current context as it already exists
+WARNING - Failed to add tr0 to current context as it already exists
+WARNING - Failed to add tr1 to current context as it already exists
+WARNING - Failed to add tr2 to current context as it already exists
+WARNING - Failed to add tr3 to current context as it already exists
+DEBUG - TraceSTDPSynapse is using the resolver from DenseSynapse for resolving key "advance_state"
+DEBUG - HebbianSynapse is using the resolver from DenseSynapse for resolving key "advance_state"
+DEBUG - HebbianSynapse is using the resolver from DenseSynapse for resolving key "advance_state"
+DEBUG - HebbianSynapse is using the resolver from DenseSynapse for resolving key "advance_state"
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+New Log 03/18/2026 13:45:16
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+DEBUG - resist_scale is missing from RateCell's help method
+DEBUG - shape is missing from RateCell's help method
+DEBUG - shape is missing from GaussianErrorCell's help method
+DEBUG - use_online_predictor is missing from RewardErrorCell's help method
+DEBUG - resources_init is missing from STPDenseSynapse's help method
+DEBUG - w_decay is missing from STDPSynapse's help method
+DEBUG - w_bound is missing from STDPSynapse's help method
+DEBUG - w_bound is missing from TraceSTDPSynapse's help method
+DEBUG - w_bound is missing from ExpSTDPSynapse's help method
+DEBUG - A_plus is missing from EventSTDPSynapse's help method
+DEBUG - A_minus is missing from EventSTDPSynapse's help method
+DEBUG - presyn_win_len is missing from EventSTDPSynapse's help method
+DEBUG - w_bound is missing from EventSTDPSynapse's help method
+DEBUG - batch_size is missing from ConvSynapse's help method
+DEBUG - batch_size is missing from ConvSynapse's help method
+DEBUG - batch_size is missing from DeconvSynapse's help method
+DEBUG - batch_size is missing from DeconvSynapse's help method
+DEBUG - batch_size is missing from HebbianConvSynapse's help method
+DEBUG - batch_size is missing from HebbianDeconvSynapse's help method
+DEBUG - batch_size is missing from TraceSTDPConvSynapse's help method
+DEBUG - pretrace_target is missing from MSTDPETSynapse's help method
+DEBUG - w_bound is missing from MSTDPETSynapse's help method
+DEBUG - elg_decay is missing from EligibilityTrace's help method
+DEBUG - integration_type is missing from EligibilityTrace's help method
+DEBUG - tau is missing from LatencyCell's help method
+DEBUG - eta is missing from CSDPSynapse's help method
+DEBUG - w_bound is missing from CSDPSynapse's help method
+DEBUG - is_nonnegative is missing from CSDPSynapse's help method
+DEBUG - w_decay is missing from CSDPSynapse's help method
+DEBUG - update_sign is missing from CSDPSynapse's help method
+DEBUG - w_sign is missing from CSDPSynapse's help method
+DEBUG - is_hollow is missing from CSDPSynapse's help method
+DEBUG - soft_bound is missing from CSDPSynapse's help method
+DEBUG - gamma_depress is missing from CSDPSynapse's help method
+DEBUG - optim_type is missing from CSDPSynapse's help method
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+New Log 03/18/2026 13:45:18
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+DEBUG - resist_scale is missing from RateCell's help method
+DEBUG - shape is missing from RateCell's help method
+DEBUG - shape is missing from GaussianErrorCell's help method
+DEBUG - use_online_predictor is missing from RewardErrorCell's help method
+DEBUG - resources_init is missing from STPDenseSynapse's help method
+DEBUG - w_decay is missing from STDPSynapse's help method
+DEBUG - w_bound is missing from STDPSynapse's help method
+DEBUG - w_bound is missing from TraceSTDPSynapse's help method
+DEBUG - w_bound is missing from ExpSTDPSynapse's help method
+DEBUG - A_plus is missing from EventSTDPSynapse's help method
+DEBUG - A_minus is missing from EventSTDPSynapse's help method
+DEBUG - presyn_win_len is missing from EventSTDPSynapse's help method
+DEBUG - w_bound is missing from EventSTDPSynapse's help method
+DEBUG - batch_size is missing from ConvSynapse's help method
+DEBUG - batch_size is missing from ConvSynapse's help method
+DEBUG - batch_size is missing from DeconvSynapse's help method
+DEBUG - batch_size is missing from DeconvSynapse's help method
+DEBUG - batch_size is missing from HebbianConvSynapse's help method
+DEBUG - batch_size is missing from HebbianDeconvSynapse's help method
+DEBUG - batch_size is missing from TraceSTDPConvSynapse's help method
+DEBUG - pretrace_target is missing from MSTDPETSynapse's help method
+DEBUG - w_bound is missing from MSTDPETSynapse's help method
+DEBUG - elg_decay is missing from EligibilityTrace's help method
+DEBUG - integration_type is missing from EligibilityTrace's help method
+DEBUG - tau is missing from LatencyCell's help method
+DEBUG - eta is missing from CSDPSynapse's help method
+DEBUG - w_bound is missing from CSDPSynapse's help method
+DEBUG - is_nonnegative is missing from CSDPSynapse's help method
+DEBUG - w_decay is missing from CSDPSynapse's help method
+DEBUG - update_sign is missing from CSDPSynapse's help method
+DEBUG - w_sign is missing from CSDPSynapse's help method
+DEBUG - is_hollow is missing from CSDPSynapse's help method
+DEBUG - soft_bound is missing from CSDPSynapse's help method
+DEBUG - gamma_depress is missing from CSDPSynapse's help method
+DEBUG - optim_type is missing from CSDPSynapse's help method
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+New Log 03/18/2026 13:45:19
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 DEBUG - resist_scale is missing from RateCell's help method
 DEBUG - shape is missing from RateCell's help method
@@ -184,7 +835,45 @@ DEBUG - HebbianSynapse is using the resolver from DenseSynapse for resolving key
 DEBUG - HebbianSynapse is using the resolver from DenseSynapse for resolving key "advance_state"
 DEBUG - HebbianSynapse is using the resolver from DenseSynapse for resolving key "advance_state"
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
-New Log 03/18/2026 10:21:18
+New Log 03/18/2026 13:45:55
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+DEBUG - resist_scale is missing from RateCell's help method
+DEBUG - shape is missing from RateCell's help method
+DEBUG - shape is missing from GaussianErrorCell's help method
+DEBUG - use_online_predictor is missing from RewardErrorCell's help method
+DEBUG - resources_init is missing from STPDenseSynapse's help method
+DEBUG - w_decay is missing from STDPSynapse's help method
+DEBUG - w_bound is missing from STDPSynapse's help method
+DEBUG - w_bound is missing from TraceSTDPSynapse's help method
+DEBUG - w_bound is missing from ExpSTDPSynapse's help method
+DEBUG - A_plus is missing from EventSTDPSynapse's help method
+DEBUG - A_minus is missing from EventSTDPSynapse's help method
+DEBUG - presyn_win_len is missing from EventSTDPSynapse's help method
+DEBUG - w_bound is missing from EventSTDPSynapse's help method
+DEBUG - batch_size is missing from ConvSynapse's help method
+DEBUG - batch_size is missing from ConvSynapse's help method
+DEBUG - batch_size is missing from DeconvSynapse's help method
+DEBUG - batch_size is missing from DeconvSynapse's help method
+DEBUG - batch_size is missing from HebbianConvSynapse's help method
+DEBUG - batch_size is missing from HebbianDeconvSynapse's help method
+DEBUG - batch_size is missing from TraceSTDPConvSynapse's help method
+DEBUG - pretrace_target is missing from MSTDPETSynapse's help method
+DEBUG - w_bound is missing from MSTDPETSynapse's help method
+DEBUG - elg_decay is missing from EligibilityTrace's help method
+DEBUG - integration_type is missing from EligibilityTrace's help method
+DEBUG - tau is missing from LatencyCell's help method
+DEBUG - eta is missing from CSDPSynapse's help method
+DEBUG - w_bound is missing from CSDPSynapse's help method
+DEBUG - is_nonnegative is missing from CSDPSynapse's help method
+DEBUG - w_decay is missing from CSDPSynapse's help method
+DEBUG - update_sign is missing from CSDPSynapse's help method
+DEBUG - w_sign is missing from CSDPSynapse's help method
+DEBUG - is_hollow is missing from CSDPSynapse's help method
+DEBUG - soft_bound is missing from CSDPSynapse's help method
+DEBUG - gamma_depress is missing from CSDPSynapse's help method
+DEBUG - optim_type is missing from CSDPSynapse's help method
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+New Log 03/18/2026 13:45:56
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 DEBUG - resist_scale is missing from RateCell's help method
 DEBUG - shape is missing from RateCell's help method
@@ -256,7 +945,815 @@ DEBUG - HebbianSynapse is using the resolver from DenseSynapse for resolving key
 DEBUG - HebbianSynapse is using the resolver from DenseSynapse for resolving key "advance_state"
 DEBUG - HebbianSynapse is using the resolver from DenseSynapse for resolving key "advance_state"
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
-New Log 03/18/2026 10:22:25
+New Log 03/18/2026 13:46:34
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+DEBUG - resist_scale is missing from RateCell's help method
+DEBUG - shape is missing from RateCell's help method
+DEBUG - shape is missing from GaussianErrorCell's help method
+DEBUG - use_online_predictor is missing from RewardErrorCell's help method
+DEBUG - resources_init is missing from STPDenseSynapse's help method
+DEBUG - w_decay is missing from STDPSynapse's help method
+DEBUG - w_bound is missing from STDPSynapse's help method
+DEBUG - w_bound is missing from TraceSTDPSynapse's help method
+DEBUG - w_bound is missing from ExpSTDPSynapse's help method
+DEBUG - A_plus is missing from EventSTDPSynapse's help method
+DEBUG - A_minus is missing from EventSTDPSynapse's help method
+DEBUG - presyn_win_len is missing from EventSTDPSynapse's help method
+DEBUG - w_bound is missing from EventSTDPSynapse's help method
+DEBUG - batch_size is missing from ConvSynapse's help method
+DEBUG - batch_size is missing from ConvSynapse's help method
+DEBUG - batch_size is missing from DeconvSynapse's help method
+DEBUG - batch_size is missing from DeconvSynapse's help method
+DEBUG - batch_size is missing from HebbianConvSynapse's help method
+DEBUG - batch_size is missing from HebbianDeconvSynapse's help method
+DEBUG - batch_size is missing from TraceSTDPConvSynapse's help method
+DEBUG - pretrace_target is missing from MSTDPETSynapse's help method
+DEBUG - w_bound is missing from MSTDPETSynapse's help method
+DEBUG - elg_decay is missing from EligibilityTrace's help method
+DEBUG - integration_type is missing from EligibilityTrace's help method
+DEBUG - tau is missing from LatencyCell's help method
+DEBUG - eta is missing from CSDPSynapse's help method
+DEBUG - w_bound is missing from CSDPSynapse's help method
+DEBUG - is_nonnegative is missing from CSDPSynapse's help method
+DEBUG - w_decay is missing from CSDPSynapse's help method
+DEBUG - update_sign is missing from CSDPSynapse's help method
+DEBUG - w_sign is missing from CSDPSynapse's help method
+DEBUG - is_hollow is missing from CSDPSynapse's help method
+DEBUG - soft_bound is missing from CSDPSynapse's help method
+DEBUG - gamma_depress is missing from CSDPSynapse's help method
+DEBUG - optim_type is missing from CSDPSynapse's help method
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+New Log 03/18/2026 13:46:35
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+DEBUG - resist_scale is missing from RateCell's help method
+DEBUG - shape is missing from RateCell's help method
+DEBUG - shape is missing from GaussianErrorCell's help method
+DEBUG - use_online_predictor is missing from RewardErrorCell's help method
+DEBUG - resources_init is missing from STPDenseSynapse's help method
+DEBUG - w_decay is missing from STDPSynapse's help method
+DEBUG - w_bound is missing from STDPSynapse's help method
+DEBUG - w_bound is missing from TraceSTDPSynapse's help method
+DEBUG - w_bound is missing from ExpSTDPSynapse's help method
+DEBUG - A_plus is missing from EventSTDPSynapse's help method
+DEBUG - A_minus is missing from EventSTDPSynapse's help method
+DEBUG - presyn_win_len is missing from EventSTDPSynapse's help method
+DEBUG - w_bound is missing from EventSTDPSynapse's help method
+DEBUG - batch_size is missing from ConvSynapse's help method
+DEBUG - batch_size is missing from ConvSynapse's help method
+DEBUG - batch_size is missing from DeconvSynapse's help method
+DEBUG - batch_size is missing from DeconvSynapse's help method
+DEBUG - batch_size is missing from HebbianConvSynapse's help method
+DEBUG - batch_size is missing from HebbianDeconvSynapse's help method
+DEBUG - batch_size is missing from TraceSTDPConvSynapse's help method
+DEBUG - pretrace_target is missing from MSTDPETSynapse's help method
+DEBUG - w_bound is missing from MSTDPETSynapse's help method
+DEBUG - elg_decay is missing from EligibilityTrace's help method
+DEBUG - integration_type is missing from EligibilityTrace's help method
+DEBUG - tau is missing from LatencyCell's help method
+DEBUG - eta is missing from CSDPSynapse's help method
+DEBUG - w_bound is missing from CSDPSynapse's help method
+DEBUG - is_nonnegative is missing from CSDPSynapse's help method
+DEBUG - w_decay is missing from CSDPSynapse's help method
+DEBUG - update_sign is missing from CSDPSynapse's help method
+DEBUG - w_sign is missing from CSDPSynapse's help method
+DEBUG - is_hollow is missing from CSDPSynapse's help method
+DEBUG - soft_bound is missing from CSDPSynapse's help method
+DEBUG - gamma_depress is missing from CSDPSynapse's help method
+DEBUG - optim_type is missing from CSDPSynapse's help method
+INFO - Failed to serialize "key" in /Circuit/z0
+INFO - Failed to serialize "key" in /Circuit/W1
+INFO - W1 is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/z1
+INFO - Failed to serialize "key" in /Circuit/W2
+INFO - W2 is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/z2
+INFO - Failed to serialize "key" in /Circuit/V2
+INFO - V2 is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/M1
+INFO - M1 is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/M2
+INFO - M2 is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/zy
+INFO - Failed to serialize "key" in /Circuit/C2
+INFO - C2 is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/C3
+INFO - C3 is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/zR
+INFO - Failed to serialize "key" in /Circuit/R1
+INFO - R1 is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/z3
+INFO - Failed to serialize "key" in /Circuit/V3y
+INFO - V3y is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/V2y
+INFO - V2y is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/tr0
+INFO - Failed to serialize "key" in /Circuit/tr1
+INFO - Failed to serialize "key" in /Circuit/tr2
+INFO - Failed to serialize "key" in /Circuit/tr3
+DEBUG - TraceSTDPSynapse is using the resolver from DenseSynapse for resolving key "advance_state"
+DEBUG - HebbianSynapse is using the resolver from DenseSynapse for resolving key "advance_state"
+DEBUG - HebbianSynapse is using the resolver from DenseSynapse for resolving key "advance_state"
+DEBUG - HebbianSynapse is using the resolver from DenseSynapse for resolving key "advance_state"
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+New Log 03/18/2026 13:47:11
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+DEBUG - resist_scale is missing from RateCell's help method
+DEBUG - shape is missing from RateCell's help method
+DEBUG - shape is missing from GaussianErrorCell's help method
+DEBUG - use_online_predictor is missing from RewardErrorCell's help method
+DEBUG - resources_init is missing from STPDenseSynapse's help method
+DEBUG - w_decay is missing from STDPSynapse's help method
+DEBUG - w_bound is missing from STDPSynapse's help method
+DEBUG - w_bound is missing from TraceSTDPSynapse's help method
+DEBUG - w_bound is missing from ExpSTDPSynapse's help method
+DEBUG - A_plus is missing from EventSTDPSynapse's help method
+DEBUG - A_minus is missing from EventSTDPSynapse's help method
+DEBUG - presyn_win_len is missing from EventSTDPSynapse's help method
+DEBUG - w_bound is missing from EventSTDPSynapse's help method
+DEBUG - batch_size is missing from ConvSynapse's help method
+DEBUG - batch_size is missing from ConvSynapse's help method
+DEBUG - batch_size is missing from DeconvSynapse's help method
+DEBUG - batch_size is missing from DeconvSynapse's help method
+DEBUG - batch_size is missing from HebbianConvSynapse's help method
+DEBUG - batch_size is missing from HebbianDeconvSynapse's help method
+DEBUG - batch_size is missing from TraceSTDPConvSynapse's help method
+DEBUG - pretrace_target is missing from MSTDPETSynapse's help method
+DEBUG - w_bound is missing from MSTDPETSynapse's help method
+DEBUG - elg_decay is missing from EligibilityTrace's help method
+DEBUG - integration_type is missing from EligibilityTrace's help method
+DEBUG - tau is missing from LatencyCell's help method
+DEBUG - eta is missing from CSDPSynapse's help method
+DEBUG - w_bound is missing from CSDPSynapse's help method
+DEBUG - is_nonnegative is missing from CSDPSynapse's help method
+DEBUG - w_decay is missing from CSDPSynapse's help method
+DEBUG - update_sign is missing from CSDPSynapse's help method
+DEBUG - w_sign is missing from CSDPSynapse's help method
+DEBUG - is_hollow is missing from CSDPSynapse's help method
+DEBUG - soft_bound is missing from CSDPSynapse's help method
+DEBUG - gamma_depress is missing from CSDPSynapse's help method
+DEBUG - optim_type is missing from CSDPSynapse's help method
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+New Log 03/18/2026 13:47:12
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+DEBUG - resist_scale is missing from RateCell's help method
+DEBUG - shape is missing from RateCell's help method
+DEBUG - shape is missing from GaussianErrorCell's help method
+DEBUG - use_online_predictor is missing from RewardErrorCell's help method
+DEBUG - resources_init is missing from STPDenseSynapse's help method
+DEBUG - w_decay is missing from STDPSynapse's help method
+DEBUG - w_bound is missing from STDPSynapse's help method
+DEBUG - w_bound is missing from TraceSTDPSynapse's help method
+DEBUG - w_bound is missing from ExpSTDPSynapse's help method
+DEBUG - A_plus is missing from EventSTDPSynapse's help method
+DEBUG - A_minus is missing from EventSTDPSynapse's help method
+DEBUG - presyn_win_len is missing from EventSTDPSynapse's help method
+DEBUG - w_bound is missing from EventSTDPSynapse's help method
+DEBUG - batch_size is missing from ConvSynapse's help method
+DEBUG - batch_size is missing from ConvSynapse's help method
+DEBUG - batch_size is missing from DeconvSynapse's help method
+DEBUG - batch_size is missing from DeconvSynapse's help method
+DEBUG - batch_size is missing from HebbianConvSynapse's help method
+DEBUG - batch_size is missing from HebbianDeconvSynapse's help method
+DEBUG - batch_size is missing from TraceSTDPConvSynapse's help method
+DEBUG - pretrace_target is missing from MSTDPETSynapse's help method
+DEBUG - w_bound is missing from MSTDPETSynapse's help method
+DEBUG - elg_decay is missing from EligibilityTrace's help method
+DEBUG - integration_type is missing from EligibilityTrace's help method
+DEBUG - tau is missing from LatencyCell's help method
+DEBUG - eta is missing from CSDPSynapse's help method
+DEBUG - w_bound is missing from CSDPSynapse's help method
+DEBUG - is_nonnegative is missing from CSDPSynapse's help method
+DEBUG - w_decay is missing from CSDPSynapse's help method
+DEBUG - update_sign is missing from CSDPSynapse's help method
+DEBUG - w_sign is missing from CSDPSynapse's help method
+DEBUG - is_hollow is missing from CSDPSynapse's help method
+DEBUG - soft_bound is missing from CSDPSynapse's help method
+DEBUG - gamma_depress is missing from CSDPSynapse's help method
+DEBUG - optim_type is missing from CSDPSynapse's help method
+INFO - Failed to serialize "key" in /Circuit/z0
+INFO - Failed to serialize "key" in /Circuit/W1
+INFO - W1 is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/z1
+INFO - Failed to serialize "key" in /Circuit/W2
+INFO - W2 is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/z2
+INFO - Failed to serialize "key" in /Circuit/V2
+INFO - V2 is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/M1
+INFO - M1 is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/M2
+INFO - M2 is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/zy
+INFO - Failed to serialize "key" in /Circuit/C2
+INFO - C2 is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/C3
+INFO - C3 is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/zR
+INFO - Failed to serialize "key" in /Circuit/R1
+INFO - R1 is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/z3
+INFO - Failed to serialize "key" in /Circuit/V3y
+INFO - V3y is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/V2y
+INFO - V2y is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/tr0
+INFO - Failed to serialize "key" in /Circuit/tr1
+INFO - Failed to serialize "key" in /Circuit/tr2
+INFO - Failed to serialize "key" in /Circuit/tr3
+DEBUG - TraceSTDPSynapse is using the resolver from DenseSynapse for resolving key "advance_state"
+DEBUG - HebbianSynapse is using the resolver from DenseSynapse for resolving key "advance_state"
+DEBUG - HebbianSynapse is using the resolver from DenseSynapse for resolving key "advance_state"
+DEBUG - HebbianSynapse is using the resolver from DenseSynapse for resolving key "advance_state"
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+New Log 03/18/2026 13:47:48
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+DEBUG - resist_scale is missing from RateCell's help method
+DEBUG - shape is missing from RateCell's help method
+DEBUG - shape is missing from GaussianErrorCell's help method
+DEBUG - use_online_predictor is missing from RewardErrorCell's help method
+DEBUG - resources_init is missing from STPDenseSynapse's help method
+DEBUG - w_decay is missing from STDPSynapse's help method
+DEBUG - w_bound is missing from STDPSynapse's help method
+DEBUG - w_bound is missing from TraceSTDPSynapse's help method
+DEBUG - w_bound is missing from ExpSTDPSynapse's help method
+DEBUG - A_plus is missing from EventSTDPSynapse's help method
+DEBUG - A_minus is missing from EventSTDPSynapse's help method
+DEBUG - presyn_win_len is missing from EventSTDPSynapse's help method
+DEBUG - w_bound is missing from EventSTDPSynapse's help method
+DEBUG - batch_size is missing from ConvSynapse's help method
+DEBUG - batch_size is missing from ConvSynapse's help method
+DEBUG - batch_size is missing from DeconvSynapse's help method
+DEBUG - batch_size is missing from DeconvSynapse's help method
+DEBUG - batch_size is missing from HebbianConvSynapse's help method
+DEBUG - batch_size is missing from HebbianDeconvSynapse's help method
+DEBUG - batch_size is missing from TraceSTDPConvSynapse's help method
+DEBUG - pretrace_target is missing from MSTDPETSynapse's help method
+DEBUG - w_bound is missing from MSTDPETSynapse's help method
+DEBUG - elg_decay is missing from EligibilityTrace's help method
+DEBUG - integration_type is missing from EligibilityTrace's help method
+DEBUG - tau is missing from LatencyCell's help method
+DEBUG - eta is missing from CSDPSynapse's help method
+DEBUG - w_bound is missing from CSDPSynapse's help method
+DEBUG - is_nonnegative is missing from CSDPSynapse's help method
+DEBUG - w_decay is missing from CSDPSynapse's help method
+DEBUG - update_sign is missing from CSDPSynapse's help method
+DEBUG - w_sign is missing from CSDPSynapse's help method
+DEBUG - is_hollow is missing from CSDPSynapse's help method
+DEBUG - soft_bound is missing from CSDPSynapse's help method
+DEBUG - gamma_depress is missing from CSDPSynapse's help method
+DEBUG - optim_type is missing from CSDPSynapse's help method
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+New Log 03/18/2026 13:47:49
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+DEBUG - resist_scale is missing from RateCell's help method
+DEBUG - shape is missing from RateCell's help method
+DEBUG - shape is missing from GaussianErrorCell's help method
+DEBUG - use_online_predictor is missing from RewardErrorCell's help method
+DEBUG - resources_init is missing from STPDenseSynapse's help method
+DEBUG - w_decay is missing from STDPSynapse's help method
+DEBUG - w_bound is missing from STDPSynapse's help method
+DEBUG - w_bound is missing from TraceSTDPSynapse's help method
+DEBUG - w_bound is missing from ExpSTDPSynapse's help method
+DEBUG - A_plus is missing from EventSTDPSynapse's help method
+DEBUG - A_minus is missing from EventSTDPSynapse's help method
+DEBUG - presyn_win_len is missing from EventSTDPSynapse's help method
+DEBUG - w_bound is missing from EventSTDPSynapse's help method
+DEBUG - batch_size is missing from ConvSynapse's help method
+DEBUG - batch_size is missing from ConvSynapse's help method
+DEBUG - batch_size is missing from DeconvSynapse's help method
+DEBUG - batch_size is missing from DeconvSynapse's help method
+DEBUG - batch_size is missing from HebbianConvSynapse's help method
+DEBUG - batch_size is missing from HebbianDeconvSynapse's help method
+DEBUG - batch_size is missing from TraceSTDPConvSynapse's help method
+DEBUG - pretrace_target is missing from MSTDPETSynapse's help method
+DEBUG - w_bound is missing from MSTDPETSynapse's help method
+DEBUG - elg_decay is missing from EligibilityTrace's help method
+DEBUG - integration_type is missing from EligibilityTrace's help method
+DEBUG - tau is missing from LatencyCell's help method
+DEBUG - eta is missing from CSDPSynapse's help method
+DEBUG - w_bound is missing from CSDPSynapse's help method
+DEBUG - is_nonnegative is missing from CSDPSynapse's help method
+DEBUG - w_decay is missing from CSDPSynapse's help method
+DEBUG - update_sign is missing from CSDPSynapse's help method
+DEBUG - w_sign is missing from CSDPSynapse's help method
+DEBUG - is_hollow is missing from CSDPSynapse's help method
+DEBUG - soft_bound is missing from CSDPSynapse's help method
+DEBUG - gamma_depress is missing from CSDPSynapse's help method
+DEBUG - optim_type is missing from CSDPSynapse's help method
+INFO - Failed to serialize "key" in /Circuit/z0
+INFO - Failed to serialize "key" in /Circuit/W1
+INFO - W1 is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/z1
+INFO - Failed to serialize "key" in /Circuit/W2
+INFO - W2 is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/z2
+INFO - Failed to serialize "key" in /Circuit/V2
+INFO - V2 is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/M1
+INFO - M1 is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/M2
+INFO - M2 is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/zy
+INFO - Failed to serialize "key" in /Circuit/C2
+INFO - C2 is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/C3
+INFO - C3 is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/zR
+INFO - Failed to serialize "key" in /Circuit/R1
+INFO - R1 is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/z3
+INFO - Failed to serialize "key" in /Circuit/V3y
+INFO - V3y is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/V2y
+INFO - V2y is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/tr0
+INFO - Failed to serialize "key" in /Circuit/tr1
+INFO - Failed to serialize "key" in /Circuit/tr2
+INFO - Failed to serialize "key" in /Circuit/tr3
+DEBUG - TraceSTDPSynapse is using the resolver from DenseSynapse for resolving key "advance_state"
+DEBUG - HebbianSynapse is using the resolver from DenseSynapse for resolving key "advance_state"
+DEBUG - HebbianSynapse is using the resolver from DenseSynapse for resolving key "advance_state"
+DEBUG - HebbianSynapse is using the resolver from DenseSynapse for resolving key "advance_state"
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+New Log 03/18/2026 13:48:27
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+DEBUG - resist_scale is missing from RateCell's help method
+DEBUG - shape is missing from RateCell's help method
+DEBUG - shape is missing from GaussianErrorCell's help method
+DEBUG - use_online_predictor is missing from RewardErrorCell's help method
+DEBUG - resources_init is missing from STPDenseSynapse's help method
+DEBUG - w_decay is missing from STDPSynapse's help method
+DEBUG - w_bound is missing from STDPSynapse's help method
+DEBUG - w_bound is missing from TraceSTDPSynapse's help method
+DEBUG - w_bound is missing from ExpSTDPSynapse's help method
+DEBUG - A_plus is missing from EventSTDPSynapse's help method
+DEBUG - A_minus is missing from EventSTDPSynapse's help method
+DEBUG - presyn_win_len is missing from EventSTDPSynapse's help method
+DEBUG - w_bound is missing from EventSTDPSynapse's help method
+DEBUG - batch_size is missing from ConvSynapse's help method
+DEBUG - batch_size is missing from ConvSynapse's help method
+DEBUG - batch_size is missing from DeconvSynapse's help method
+DEBUG - batch_size is missing from DeconvSynapse's help method
+DEBUG - batch_size is missing from HebbianConvSynapse's help method
+DEBUG - batch_size is missing from HebbianDeconvSynapse's help method
+DEBUG - batch_size is missing from TraceSTDPConvSynapse's help method
+DEBUG - pretrace_target is missing from MSTDPETSynapse's help method
+DEBUG - w_bound is missing from MSTDPETSynapse's help method
+DEBUG - elg_decay is missing from EligibilityTrace's help method
+DEBUG - integration_type is missing from EligibilityTrace's help method
+DEBUG - tau is missing from LatencyCell's help method
+DEBUG - eta is missing from CSDPSynapse's help method
+DEBUG - w_bound is missing from CSDPSynapse's help method
+DEBUG - is_nonnegative is missing from CSDPSynapse's help method
+DEBUG - w_decay is missing from CSDPSynapse's help method
+DEBUG - update_sign is missing from CSDPSynapse's help method
+DEBUG - w_sign is missing from CSDPSynapse's help method
+DEBUG - is_hollow is missing from CSDPSynapse's help method
+DEBUG - soft_bound is missing from CSDPSynapse's help method
+DEBUG - gamma_depress is missing from CSDPSynapse's help method
+DEBUG - optim_type is missing from CSDPSynapse's help method
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+New Log 03/18/2026 13:48:28
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+DEBUG - resist_scale is missing from RateCell's help method
+DEBUG - shape is missing from RateCell's help method
+DEBUG - shape is missing from GaussianErrorCell's help method
+DEBUG - use_online_predictor is missing from RewardErrorCell's help method
+DEBUG - resources_init is missing from STPDenseSynapse's help method
+DEBUG - w_decay is missing from STDPSynapse's help method
+DEBUG - w_bound is missing from STDPSynapse's help method
+DEBUG - w_bound is missing from TraceSTDPSynapse's help method
+DEBUG - w_bound is missing from ExpSTDPSynapse's help method
+DEBUG - A_plus is missing from EventSTDPSynapse's help method
+DEBUG - A_minus is missing from EventSTDPSynapse's help method
+DEBUG - presyn_win_len is missing from EventSTDPSynapse's help method
+DEBUG - w_bound is missing from EventSTDPSynapse's help method
+DEBUG - batch_size is missing from ConvSynapse's help method
+DEBUG - batch_size is missing from ConvSynapse's help method
+DEBUG - batch_size is missing from DeconvSynapse's help method
+DEBUG - batch_size is missing from DeconvSynapse's help method
+DEBUG - batch_size is missing from HebbianConvSynapse's help method
+DEBUG - batch_size is missing from HebbianDeconvSynapse's help method
+DEBUG - batch_size is missing from TraceSTDPConvSynapse's help method
+DEBUG - pretrace_target is missing from MSTDPETSynapse's help method
+DEBUG - w_bound is missing from MSTDPETSynapse's help method
+DEBUG - elg_decay is missing from EligibilityTrace's help method
+DEBUG - integration_type is missing from EligibilityTrace's help method
+DEBUG - tau is missing from LatencyCell's help method
+DEBUG - eta is missing from CSDPSynapse's help method
+DEBUG - w_bound is missing from CSDPSynapse's help method
+DEBUG - is_nonnegative is missing from CSDPSynapse's help method
+DEBUG - w_decay is missing from CSDPSynapse's help method
+DEBUG - update_sign is missing from CSDPSynapse's help method
+DEBUG - w_sign is missing from CSDPSynapse's help method
+DEBUG - is_hollow is missing from CSDPSynapse's help method
+DEBUG - soft_bound is missing from CSDPSynapse's help method
+DEBUG - gamma_depress is missing from CSDPSynapse's help method
+DEBUG - optim_type is missing from CSDPSynapse's help method
+INFO - Failed to serialize "key" in /Circuit/z0
+INFO - Failed to serialize "key" in /Circuit/W1
+INFO - W1 is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/z1
+INFO - Failed to serialize "key" in /Circuit/W2
+INFO - W2 is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/z2
+INFO - Failed to serialize "key" in /Circuit/V2
+INFO - V2 is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/M1
+INFO - M1 is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/M2
+INFO - M2 is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/zy
+INFO - Failed to serialize "key" in /Circuit/C2
+INFO - C2 is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/C3
+INFO - C3 is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/zR
+INFO - Failed to serialize "key" in /Circuit/R1
+INFO - R1 is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/z3
+INFO - Failed to serialize "key" in /Circuit/V3y
+INFO - V3y is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/V2y
+INFO - V2y is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/tr0
+INFO - Failed to serialize "key" in /Circuit/tr1
+INFO - Failed to serialize "key" in /Circuit/tr2
+INFO - Failed to serialize "key" in /Circuit/tr3
+DEBUG - TraceSTDPSynapse is using the resolver from DenseSynapse for resolving key "advance_state"
+DEBUG - HebbianSynapse is using the resolver from DenseSynapse for resolving key "advance_state"
+DEBUG - HebbianSynapse is using the resolver from DenseSynapse for resolving key "advance_state"
+DEBUG - HebbianSynapse is using the resolver from DenseSynapse for resolving key "advance_state"
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+New Log 03/18/2026 13:49:03
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+DEBUG - resist_scale is missing from RateCell's help method
+DEBUG - shape is missing from RateCell's help method
+DEBUG - shape is missing from GaussianErrorCell's help method
+DEBUG - use_online_predictor is missing from RewardErrorCell's help method
+DEBUG - resources_init is missing from STPDenseSynapse's help method
+DEBUG - w_decay is missing from STDPSynapse's help method
+DEBUG - w_bound is missing from STDPSynapse's help method
+DEBUG - w_bound is missing from TraceSTDPSynapse's help method
+DEBUG - w_bound is missing from ExpSTDPSynapse's help method
+DEBUG - A_plus is missing from EventSTDPSynapse's help method
+DEBUG - A_minus is missing from EventSTDPSynapse's help method
+DEBUG - presyn_win_len is missing from EventSTDPSynapse's help method
+DEBUG - w_bound is missing from EventSTDPSynapse's help method
+DEBUG - batch_size is missing from ConvSynapse's help method
+DEBUG - batch_size is missing from ConvSynapse's help method
+DEBUG - batch_size is missing from DeconvSynapse's help method
+DEBUG - batch_size is missing from DeconvSynapse's help method
+DEBUG - batch_size is missing from HebbianConvSynapse's help method
+DEBUG - batch_size is missing from HebbianDeconvSynapse's help method
+DEBUG - batch_size is missing from TraceSTDPConvSynapse's help method
+DEBUG - pretrace_target is missing from MSTDPETSynapse's help method
+DEBUG - w_bound is missing from MSTDPETSynapse's help method
+DEBUG - elg_decay is missing from EligibilityTrace's help method
+DEBUG - integration_type is missing from EligibilityTrace's help method
+DEBUG - tau is missing from LatencyCell's help method
+DEBUG - eta is missing from CSDPSynapse's help method
+DEBUG - w_bound is missing from CSDPSynapse's help method
+DEBUG - is_nonnegative is missing from CSDPSynapse's help method
+DEBUG - w_decay is missing from CSDPSynapse's help method
+DEBUG - update_sign is missing from CSDPSynapse's help method
+DEBUG - w_sign is missing from CSDPSynapse's help method
+DEBUG - is_hollow is missing from CSDPSynapse's help method
+DEBUG - soft_bound is missing from CSDPSynapse's help method
+DEBUG - gamma_depress is missing from CSDPSynapse's help method
+DEBUG - optim_type is missing from CSDPSynapse's help method
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+New Log 03/18/2026 13:49:04
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+DEBUG - resist_scale is missing from RateCell's help method
+DEBUG - shape is missing from RateCell's help method
+DEBUG - shape is missing from GaussianErrorCell's help method
+DEBUG - use_online_predictor is missing from RewardErrorCell's help method
+DEBUG - resources_init is missing from STPDenseSynapse's help method
+DEBUG - w_decay is missing from STDPSynapse's help method
+DEBUG - w_bound is missing from STDPSynapse's help method
+DEBUG - w_bound is missing from TraceSTDPSynapse's help method
+DEBUG - w_bound is missing from ExpSTDPSynapse's help method
+DEBUG - A_plus is missing from EventSTDPSynapse's help method
+DEBUG - A_minus is missing from EventSTDPSynapse's help method
+DEBUG - presyn_win_len is missing from EventSTDPSynapse's help method
+DEBUG - w_bound is missing from EventSTDPSynapse's help method
+DEBUG - batch_size is missing from ConvSynapse's help method
+DEBUG - batch_size is missing from ConvSynapse's help method
+DEBUG - batch_size is missing from DeconvSynapse's help method
+DEBUG - batch_size is missing from DeconvSynapse's help method
+DEBUG - batch_size is missing from HebbianConvSynapse's help method
+DEBUG - batch_size is missing from HebbianDeconvSynapse's help method
+DEBUG - batch_size is missing from TraceSTDPConvSynapse's help method
+DEBUG - pretrace_target is missing from MSTDPETSynapse's help method
+DEBUG - w_bound is missing from MSTDPETSynapse's help method
+DEBUG - elg_decay is missing from EligibilityTrace's help method
+DEBUG - integration_type is missing from EligibilityTrace's help method
+DEBUG - tau is missing from LatencyCell's help method
+DEBUG - eta is missing from CSDPSynapse's help method
+DEBUG - w_bound is missing from CSDPSynapse's help method
+DEBUG - is_nonnegative is missing from CSDPSynapse's help method
+DEBUG - w_decay is missing from CSDPSynapse's help method
+DEBUG - update_sign is missing from CSDPSynapse's help method
+DEBUG - w_sign is missing from CSDPSynapse's help method
+DEBUG - is_hollow is missing from CSDPSynapse's help method
+DEBUG - soft_bound is missing from CSDPSynapse's help method
+DEBUG - gamma_depress is missing from CSDPSynapse's help method
+DEBUG - optim_type is missing from CSDPSynapse's help method
+INFO - Failed to serialize "key" in /Circuit/z0
+INFO - Failed to serialize "key" in /Circuit/W1
+INFO - W1 is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/z1
+INFO - Failed to serialize "key" in /Circuit/W2
+INFO - W2 is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/z2
+INFO - Failed to serialize "key" in /Circuit/V2
+INFO - V2 is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/M1
+INFO - M1 is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/M2
+INFO - M2 is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/zy
+INFO - Failed to serialize "key" in /Circuit/C2
+INFO - C2 is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/C3
+INFO - C3 is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/zR
+INFO - Failed to serialize "key" in /Circuit/R1
+INFO - R1 is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/z3
+INFO - Failed to serialize "key" in /Circuit/V3y
+INFO - V3y is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/V2y
+INFO - V2y is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/tr0
+INFO - Failed to serialize "key" in /Circuit/tr1
+INFO - Failed to serialize "key" in /Circuit/tr2
+INFO - Failed to serialize "key" in /Circuit/tr3
+DEBUG - TraceSTDPSynapse is using the resolver from DenseSynapse for resolving key "advance_state"
+DEBUG - HebbianSynapse is using the resolver from DenseSynapse for resolving key "advance_state"
+DEBUG - HebbianSynapse is using the resolver from DenseSynapse for resolving key "advance_state"
+DEBUG - HebbianSynapse is using the resolver from DenseSynapse for resolving key "advance_state"
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+New Log 03/18/2026 13:49:40
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+DEBUG - resist_scale is missing from RateCell's help method
+DEBUG - shape is missing from RateCell's help method
+DEBUG - shape is missing from GaussianErrorCell's help method
+DEBUG - use_online_predictor is missing from RewardErrorCell's help method
+DEBUG - resources_init is missing from STPDenseSynapse's help method
+DEBUG - w_decay is missing from STDPSynapse's help method
+DEBUG - w_bound is missing from STDPSynapse's help method
+DEBUG - w_bound is missing from TraceSTDPSynapse's help method
+DEBUG - w_bound is missing from ExpSTDPSynapse's help method
+DEBUG - A_plus is missing from EventSTDPSynapse's help method
+DEBUG - A_minus is missing from EventSTDPSynapse's help method
+DEBUG - presyn_win_len is missing from EventSTDPSynapse's help method
+DEBUG - w_bound is missing from EventSTDPSynapse's help method
+DEBUG - batch_size is missing from ConvSynapse's help method
+DEBUG - batch_size is missing from ConvSynapse's help method
+DEBUG - batch_size is missing from DeconvSynapse's help method
+DEBUG - batch_size is missing from DeconvSynapse's help method
+DEBUG - batch_size is missing from HebbianConvSynapse's help method
+DEBUG - batch_size is missing from HebbianDeconvSynapse's help method
+DEBUG - batch_size is missing from TraceSTDPConvSynapse's help method
+DEBUG - pretrace_target is missing from MSTDPETSynapse's help method
+DEBUG - w_bound is missing from MSTDPETSynapse's help method
+DEBUG - elg_decay is missing from EligibilityTrace's help method
+DEBUG - integration_type is missing from EligibilityTrace's help method
+DEBUG - tau is missing from LatencyCell's help method
+DEBUG - eta is missing from CSDPSynapse's help method
+DEBUG - w_bound is missing from CSDPSynapse's help method
+DEBUG - is_nonnegative is missing from CSDPSynapse's help method
+DEBUG - w_decay is missing from CSDPSynapse's help method
+DEBUG - update_sign is missing from CSDPSynapse's help method
+DEBUG - w_sign is missing from CSDPSynapse's help method
+DEBUG - is_hollow is missing from CSDPSynapse's help method
+DEBUG - soft_bound is missing from CSDPSynapse's help method
+DEBUG - gamma_depress is missing from CSDPSynapse's help method
+DEBUG - optim_type is missing from CSDPSynapse's help method
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+New Log 03/18/2026 13:49:41
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+DEBUG - resist_scale is missing from RateCell's help method
+DEBUG - shape is missing from RateCell's help method
+DEBUG - shape is missing from GaussianErrorCell's help method
+DEBUG - use_online_predictor is missing from RewardErrorCell's help method
+DEBUG - resources_init is missing from STPDenseSynapse's help method
+DEBUG - w_decay is missing from STDPSynapse's help method
+DEBUG - w_bound is missing from STDPSynapse's help method
+DEBUG - w_bound is missing from TraceSTDPSynapse's help method
+DEBUG - w_bound is missing from ExpSTDPSynapse's help method
+DEBUG - A_plus is missing from EventSTDPSynapse's help method
+DEBUG - A_minus is missing from EventSTDPSynapse's help method
+DEBUG - presyn_win_len is missing from EventSTDPSynapse's help method
+DEBUG - w_bound is missing from EventSTDPSynapse's help method
+DEBUG - batch_size is missing from ConvSynapse's help method
+DEBUG - batch_size is missing from ConvSynapse's help method
+DEBUG - batch_size is missing from DeconvSynapse's help method
+DEBUG - batch_size is missing from DeconvSynapse's help method
+DEBUG - batch_size is missing from HebbianConvSynapse's help method
+DEBUG - batch_size is missing from HebbianDeconvSynapse's help method
+DEBUG - batch_size is missing from TraceSTDPConvSynapse's help method
+DEBUG - pretrace_target is missing from MSTDPETSynapse's help method
+DEBUG - w_bound is missing from MSTDPETSynapse's help method
+DEBUG - elg_decay is missing from EligibilityTrace's help method
+DEBUG - integration_type is missing from EligibilityTrace's help method
+DEBUG - tau is missing from LatencyCell's help method
+DEBUG - eta is missing from CSDPSynapse's help method
+DEBUG - w_bound is missing from CSDPSynapse's help method
+DEBUG - is_nonnegative is missing from CSDPSynapse's help method
+DEBUG - w_decay is missing from CSDPSynapse's help method
+DEBUG - update_sign is missing from CSDPSynapse's help method
+DEBUG - w_sign is missing from CSDPSynapse's help method
+DEBUG - is_hollow is missing from CSDPSynapse's help method
+DEBUG - soft_bound is missing from CSDPSynapse's help method
+DEBUG - gamma_depress is missing from CSDPSynapse's help method
+DEBUG - optim_type is missing from CSDPSynapse's help method
+INFO - Failed to serialize "key" in /Circuit/z0
+INFO - Failed to serialize "key" in /Circuit/W1
+INFO - W1 is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/z1
+INFO - Failed to serialize "key" in /Circuit/W2
+INFO - W2 is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/z2
+INFO - Failed to serialize "key" in /Circuit/V2
+INFO - V2 is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/M1
+INFO - M1 is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/M2
+INFO - M2 is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/zy
+INFO - Failed to serialize "key" in /Circuit/C2
+INFO - C2 is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/C3
+INFO - C3 is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/zR
+INFO - Failed to serialize "key" in /Circuit/R1
+INFO - R1 is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/z3
+INFO - Failed to serialize "key" in /Circuit/V3y
+INFO - V3y is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/V2y
+INFO - V2y is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/tr0
+INFO - Failed to serialize "key" in /Circuit/tr1
+INFO - Failed to serialize "key" in /Circuit/tr2
+INFO - Failed to serialize "key" in /Circuit/tr3
+DEBUG - TraceSTDPSynapse is using the resolver from DenseSynapse for resolving key "advance_state"
+DEBUG - HebbianSynapse is using the resolver from DenseSynapse for resolving key "advance_state"
+DEBUG - HebbianSynapse is using the resolver from DenseSynapse for resolving key "advance_state"
+DEBUG - HebbianSynapse is using the resolver from DenseSynapse for resolving key "advance_state"
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+New Log 03/18/2026 13:50:24
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+DEBUG - resist_scale is missing from RateCell's help method
+DEBUG - shape is missing from RateCell's help method
+DEBUG - shape is missing from GaussianErrorCell's help method
+DEBUG - use_online_predictor is missing from RewardErrorCell's help method
+DEBUG - resources_init is missing from STPDenseSynapse's help method
+DEBUG - w_decay is missing from STDPSynapse's help method
+DEBUG - w_bound is missing from STDPSynapse's help method
+DEBUG - w_bound is missing from TraceSTDPSynapse's help method
+DEBUG - w_bound is missing from ExpSTDPSynapse's help method
+DEBUG - A_plus is missing from EventSTDPSynapse's help method
+DEBUG - A_minus is missing from EventSTDPSynapse's help method
+DEBUG - presyn_win_len is missing from EventSTDPSynapse's help method
+DEBUG - w_bound is missing from EventSTDPSynapse's help method
+DEBUG - batch_size is missing from ConvSynapse's help method
+DEBUG - batch_size is missing from ConvSynapse's help method
+DEBUG - batch_size is missing from DeconvSynapse's help method
+DEBUG - batch_size is missing from DeconvSynapse's help method
+DEBUG - batch_size is missing from HebbianConvSynapse's help method
+DEBUG - batch_size is missing from HebbianDeconvSynapse's help method
+DEBUG - batch_size is missing from TraceSTDPConvSynapse's help method
+DEBUG - pretrace_target is missing from MSTDPETSynapse's help method
+DEBUG - w_bound is missing from MSTDPETSynapse's help method
+DEBUG - elg_decay is missing from EligibilityTrace's help method
+DEBUG - integration_type is missing from EligibilityTrace's help method
+DEBUG - tau is missing from LatencyCell's help method
+DEBUG - eta is missing from CSDPSynapse's help method
+DEBUG - w_bound is missing from CSDPSynapse's help method
+DEBUG - is_nonnegative is missing from CSDPSynapse's help method
+DEBUG - w_decay is missing from CSDPSynapse's help method
+DEBUG - update_sign is missing from CSDPSynapse's help method
+DEBUG - w_sign is missing from CSDPSynapse's help method
+DEBUG - is_hollow is missing from CSDPSynapse's help method
+DEBUG - soft_bound is missing from CSDPSynapse's help method
+DEBUG - gamma_depress is missing from CSDPSynapse's help method
+DEBUG - optim_type is missing from CSDPSynapse's help method
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+New Log 03/18/2026 13:50:25
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+DEBUG - resist_scale is missing from RateCell's help method
+DEBUG - shape is missing from RateCell's help method
+DEBUG - shape is missing from GaussianErrorCell's help method
+DEBUG - use_online_predictor is missing from RewardErrorCell's help method
+DEBUG - resources_init is missing from STPDenseSynapse's help method
+DEBUG - w_decay is missing from STDPSynapse's help method
+DEBUG - w_bound is missing from STDPSynapse's help method
+DEBUG - w_bound is missing from TraceSTDPSynapse's help method
+DEBUG - w_bound is missing from ExpSTDPSynapse's help method
+DEBUG - A_plus is missing from EventSTDPSynapse's help method
+DEBUG - A_minus is missing from EventSTDPSynapse's help method
+DEBUG - presyn_win_len is missing from EventSTDPSynapse's help method
+DEBUG - w_bound is missing from EventSTDPSynapse's help method
+DEBUG - batch_size is missing from ConvSynapse's help method
+DEBUG - batch_size is missing from ConvSynapse's help method
+DEBUG - batch_size is missing from DeconvSynapse's help method
+DEBUG - batch_size is missing from DeconvSynapse's help method
+DEBUG - batch_size is missing from HebbianConvSynapse's help method
+DEBUG - batch_size is missing from HebbianDeconvSynapse's help method
+DEBUG - batch_size is missing from TraceSTDPConvSynapse's help method
+DEBUG - pretrace_target is missing from MSTDPETSynapse's help method
+DEBUG - w_bound is missing from MSTDPETSynapse's help method
+DEBUG - elg_decay is missing from EligibilityTrace's help method
+DEBUG - integration_type is missing from EligibilityTrace's help method
+DEBUG - tau is missing from LatencyCell's help method
+DEBUG - eta is missing from CSDPSynapse's help method
+DEBUG - w_bound is missing from CSDPSynapse's help method
+DEBUG - is_nonnegative is missing from CSDPSynapse's help method
+DEBUG - w_decay is missing from CSDPSynapse's help method
+DEBUG - update_sign is missing from CSDPSynapse's help method
+DEBUG - w_sign is missing from CSDPSynapse's help method
+DEBUG - is_hollow is missing from CSDPSynapse's help method
+DEBUG - soft_bound is missing from CSDPSynapse's help method
+DEBUG - gamma_depress is missing from CSDPSynapse's help method
+DEBUG - optim_type is missing from CSDPSynapse's help method
+INFO - Failed to serialize "key" in /Circuit/z0
+INFO - Failed to serialize "key" in /Circuit/W1
+INFO - W1 is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/z1
+INFO - Failed to serialize "key" in /Circuit/W2
+INFO - W2 is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/z2
+INFO - Failed to serialize "key" in /Circuit/V2
+INFO - V2 is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/M1
+INFO - M1 is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/M2
+INFO - M2 is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/zy
+INFO - Failed to serialize "key" in /Circuit/C2
+INFO - C2 is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/C3
+INFO - C3 is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/zR
+INFO - Failed to serialize "key" in /Circuit/R1
+INFO - R1 is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/z3
+INFO - Failed to serialize "key" in /Circuit/V3y
+INFO - V3y is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/V2y
+INFO - V2y is using default bias value of zero (no bias kernel provided)!
+INFO - Failed to serialize "key" in /Circuit/tr0
+INFO - Failed to serialize "key" in /Circuit/tr1
+INFO - Failed to serialize "key" in /Circuit/tr2
+INFO - Failed to serialize "key" in /Circuit/tr3
+DEBUG - TraceSTDPSynapse is using the resolver from DenseSynapse for resolving key "advance_state"
+DEBUG - HebbianSynapse is using the resolver from DenseSynapse for resolving key "advance_state"
+DEBUG - HebbianSynapse is using the resolver from DenseSynapse for resolving key "advance_state"
+DEBUG - HebbianSynapse is using the resolver from DenseSynapse for resolving key "advance_state"
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+New Log 03/18/2026 13:51:08
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+DEBUG - resist_scale is missing from RateCell's help method
+DEBUG - shape is missing from RateCell's help method
+DEBUG - shape is missing from GaussianErrorCell's help method
+DEBUG - use_online_predictor is missing from RewardErrorCell's help method
+DEBUG - resources_init is missing from STPDenseSynapse's help method
+DEBUG - w_decay is missing from STDPSynapse's help method
+DEBUG - w_bound is missing from STDPSynapse's help method
+DEBUG - w_bound is missing from TraceSTDPSynapse's help method
+DEBUG - w_bound is missing from ExpSTDPSynapse's help method
+DEBUG - A_plus is missing from EventSTDPSynapse's help method
+DEBUG - A_minus is missing from EventSTDPSynapse's help method
+DEBUG - presyn_win_len is missing from EventSTDPSynapse's help method
+DEBUG - w_bound is missing from EventSTDPSynapse's help method
+DEBUG - batch_size is missing from ConvSynapse's help method
+DEBUG - batch_size is missing from ConvSynapse's help method
+DEBUG - batch_size is missing from DeconvSynapse's help method
+DEBUG - batch_size is missing from DeconvSynapse's help method
+DEBUG - batch_size is missing from HebbianConvSynapse's help method
+DEBUG - batch_size is missing from HebbianDeconvSynapse's help method
+DEBUG - batch_size is missing from TraceSTDPConvSynapse's help method
+DEBUG - pretrace_target is missing from MSTDPETSynapse's help method
+DEBUG - w_bound is missing from MSTDPETSynapse's help method
+DEBUG - elg_decay is missing from EligibilityTrace's help method
+DEBUG - integration_type is missing from EligibilityTrace's help method
+DEBUG - tau is missing from LatencyCell's help method
+DEBUG - eta is missing from CSDPSynapse's help method
+DEBUG - w_bound is missing from CSDPSynapse's help method
+DEBUG - is_nonnegative is missing from CSDPSynapse's help method
+DEBUG - w_decay is missing from CSDPSynapse's help method
+DEBUG - update_sign is missing from CSDPSynapse's help method
+DEBUG - w_sign is missing from CSDPSynapse's help method
+DEBUG - is_hollow is missing from CSDPSynapse's help method
+DEBUG - soft_bound is missing from CSDPSynapse's help method
+DEBUG - gamma_depress is missing from CSDPSynapse's help method
+DEBUG - optim_type is missing from CSDPSynapse's help method
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+New Log 03/18/2026 13:51:09
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 DEBUG - resist_scale is missing from RateCell's help method
 DEBUG - shape is missing from RateCell's help method

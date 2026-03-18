@@ -267,7 +267,7 @@
     {
         "class": "overwrite",
         "sources": [
-            "tr1/trace"
+            "g1/modulator"
         ],
         "destination": "W1/postTrace"
     },

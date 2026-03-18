@@ -7,7 +7,8 @@ from ngcsimlib.compilers import compile_command, wrap_command
 from ngcsimlib.context import Context
 from ngcsimlib.operations import summation
 from ngclearn.components import (VarTrace, BernoulliCell, SLIFCell, RateCell,
-                                 StaticSynapse, HebbianSynapse)
+                                 StaticSynapse, HebbianSynapse, TraceSTDPSynapse)
+
 from custom.CSDPSynapse import CSDPSynapse
 from custom.goodnessModCell import GoodnessModCell
 from custom.maskedErrorCell import MaskedErrorCell as ErrorCell
@@ -79,7 +80,7 @@ class CSDP_SNN():
     def __init__(self, dkey, in_dim=1, out_dim=1, hid_dim=1024, hid_dim2=1024,
                  batch_size=1, eta=0.002, T=40, dt=3., learn_recon=False,
                  algo_type="supervised", exp_dir="exp", model_name="snn_csdp",
-                 load_model_dir=None, load_param_subdir=None, **kwargs):
+                 load_model_dir=None, load_param_subdir=None, A_p=0.05, A_m=0.05,t_w=5., **kwargs):
         self.exp_dir = exp_dir
         self.model_name = model_name
         if load_model_dir is None:
@@ -152,11 +153,11 @@ class CSDP_SNN():
             with Context("Circuit") as self.circuit:
                 self.z0 = BernoulliCell("z0", n_units=in_dim,
                                         batch_size=batch_size, key=subkeys[0])
-                self.W1 = CSDPSynapse(
-                    name="W1", shape=(in_dim, hid_dim), eta=eta_w,
-                    weight_init=weightInit, bias_init=biasInit, w_bound=1.,
-                    is_nonnegative=nonneg_w, w_decay=w_decay, resist_scale=R_m,
-                    optim_type=optim_type, soft_bound=soft_bound, key=subkeys[1]
+                self.W1 = TraceSTDPSynapse(
+                    name="W1", shape=(in_dim, hid_dim), A_plus=A_p, A_minus=A_m, eta=eta_w,
+                    pretrace_target=1.,
+                    weight_init=weightInit, w_bound=1.,
+                    tau_w=0., key=subkeys[1]
                 )
                 self.z1 = SLIFCell( ## layer 1
                     name="z1", n_units=hid_dim, tau_m=tau_m, resist_m=1., #resist_m=R_m
