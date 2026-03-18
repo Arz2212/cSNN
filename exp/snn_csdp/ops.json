@@ -1,0 +1,435 @@
+[
+    {
+        "class": "overwrite",
+        "sources": [
+            "z1/s"
+        ],
+        "destination": "tr1/inputs"
+    },
+    {
+        "class": "overwrite",
+        "sources": [
+            "z2/s"
+        ],
+        "destination": "tr2/inputs"
+    },
+    {
+        "class": "overwrite",
+        "sources": [
+            "zy/s"
+        ],
+        "destination": "tr3/inputs"
+    },
+    {
+        "class": "overwrite",
+        "sources": [
+            "tr1/trace"
+        ],
+        "destination": "g1/inputs"
+    },
+    {
+        "class": "overwrite",
+        "sources": [
+            "tr2/trace"
+        ],
+        "destination": "g2/inputs"
+    },
+    {
+        "class": "overwrite",
+        "sources": [
+            "z0/outputs"
+        ],
+        "destination": "z0_prev/j"
+    },
+    {
+        "class": "overwrite",
+        "sources": [
+            "z1/s"
+        ],
+        "destination": "z1_prev/j"
+    },
+    {
+        "class": "overwrite",
+        "sources": [
+            "z2/s"
+        ],
+        "destination": "z2_prev/j"
+    },
+    {
+        "class": "overwrite",
+        "sources": [
+            "z3/outputs"
+        ],
+        "destination": "z3_prev/j"
+    },
+    {
+        "class": "overwrite",
+        "sources": [
+            "tr3/outputs"
+        ],
+        "destination": "ey/mu"
+    },
+    {
+        "class": "overwrite",
+        "sources": [
+            "z3/outputs"
+        ],
+        "destination": "ey/target"
+    },
+    {
+        "class": "overwrite",
+        "sources": [
+            "z1/s"
+        ],
+        "destination": "C2/inputs"
+    },
+    {
+        "class": "overwrite",
+        "sources": [
+            "z2/s"
+        ],
+        "destination": "C3/inputs"
+    },
+    {
+        "class": "summation",
+        "sources": [
+            "C2/outputs",
+            "C3/outputs"
+        ],
+        "destination": "zy/j"
+    },
+    {
+        "class": "overwrite",
+        "sources": [
+            "z1/s"
+        ],
+        "destination": "R1/inputs"
+    },
+    {
+        "class": "overwrite",
+        "sources": [
+            "R1/outputs"
+        ],
+        "destination": "zR/j"
+    },
+    {
+        "class": "overwrite",
+        "sources": [
+            "zR/s"
+        ],
+        "destination": "tr0/inputs"
+    },
+    {
+        "class": "overwrite",
+        "sources": [
+            "zR/s"
+        ],
+        "destination": "eR/mu"
+    },
+    {
+        "class": "overwrite",
+        "sources": [
+            "z0/outputs"
+        ],
+        "destination": "eR/target"
+    },
+    {
+        "class": "overwrite",
+        "sources": [
+            "z1/s"
+        ],
+        "destination": "R1/pre"
+    },
+    {
+        "class": "overwrite",
+        "sources": [
+            "eR/dmu"
+        ],
+        "destination": "R1/post"
+    },
+    {
+        "class": "overwrite",
+        "sources": [
+            "z0/outputs"
+        ],
+        "destination": "W1/inputs"
+    },
+    {
+        "class": "overwrite",
+        "sources": [
+            "z1_prev/zF"
+        ],
+        "destination": "M1/inputs"
+    },
+    {
+        "class": "overwrite",
+        "sources": [
+            "z2_prev/zF"
+        ],
+        "destination": "V2/inputs"
+    },
+    {
+        "class": "overwrite",
+        "sources": [
+            "z3_prev/zF"
+        ],
+        "destination": "V2y/inputs"
+    },
+    {
+        "class": "summation",
+        "sources": [
+            "W1/outputs",
+            "M1/outputs",
+            "V2/outputs",
+            "V2y/outputs"
+        ],
+        "destination": "z1/j"
+    },
+    {
+        "class": "overwrite",
+        "sources": [
+            "z1/s"
+        ],
+        "destination": "W2/inputs"
+    },
+    {
+        "class": "overwrite",
+        "sources": [
+            "z2_prev/zF"
+        ],
+        "destination": "M2/inputs"
+    },
+    {
+        "class": "overwrite",
+        "sources": [
+            "z3_prev/zF"
+        ],
+        "destination": "V3y/inputs"
+    },
+    {
+        "class": "summation",
+        "sources": [
+            "W2/outputs",
+            "M2/outputs",
+            "V3y/outputs"
+        ],
+        "destination": "z2/j"
+    },
+    {
+        "class": "overwrite",
+        "sources": [
+            "z1_prev/zF"
+        ],
+        "destination": "C2/pre"
+    },
+    {
+        "class": "overwrite",
+        "sources": [
+            "ey/dmu"
+        ],
+        "destination": "C2/post"
+    },
+    {
+        "class": "overwrite",
+        "sources": [
+            "z2_prev/zF"
+        ],
+        "destination": "C3/pre"
+    },
+    {
+        "class": "overwrite",
+        "sources": [
+            "ey/dmu"
+        ],
+        "destination": "C3/post"
+    },
+    {
+        "class": "overwrite",
+        "sources": [
+            "z0_prev/zF"
+        ],
+        "destination": "W1/preSpike"
+    },
+    {
+        "class": "overwrite",
+        "sources": [
+            "z1/s"
+        ],
+        "destination": "W1/postSpike"
+    },
+    {
+        "class": "overwrite",
+        "sources": [
+            "z0_prev/zF"
+        ],
+        "destination": "W1/preTrace"
+    },
+    {
+        "class": "overwrite",
+        "sources": [
+            "g1/modulator"
+        ],
+        "destination": "W1/postTrace"
+    },
+    {
+        "class": "overwrite",
+        "sources": [
+            "z1_prev/zF"
+        ],
+        "destination": "M1/preSpike"
+    },
+    {
+        "class": "overwrite",
+        "sources": [
+            "z1/s"
+        ],
+        "destination": "M1/postSpike"
+    },
+    {
+        "class": "overwrite",
+        "sources": [
+            "z1_prev/zF"
+        ],
+        "destination": "M1/preTrace"
+    },
+    {
+        "class": "overwrite",
+        "sources": [
+            "g1/modulator"
+        ],
+        "destination": "M1/postTrace"
+    },
+    {
+        "class": "overwrite",
+        "sources": [
+            "z1_prev/zF"
+        ],
+        "destination": "W2/preSpike"
+    },
+    {
+        "class": "overwrite",
+        "sources": [
+            "z2/s"
+        ],
+        "destination": "W2/postSpike"
+    },
+    {
+        "class": "overwrite",
+        "sources": [
+            "g2/modulator"
+        ],
+        "destination": "W2/postTrace"
+    },
+    {
+        "class": "overwrite",
+        "sources": [
+            "z2_prev/zF"
+        ],
+        "destination": "M2/preSpike"
+    },
+    {
+        "class": "overwrite",
+        "sources": [
+            "z2/s"
+        ],
+        "destination": "M2/postSpike"
+    },
+    {
+        "class": "overwrite",
+        "sources": [
+            "z2_prev/zF"
+        ],
+        "destination": "M2/preTrace"
+    },
+    {
+        "class": "overwrite",
+        "sources": [
+            "g2/modulator"
+        ],
+        "destination": "M2/postTrace"
+    },
+    {
+        "class": "overwrite",
+        "sources": [
+            "z2_prev/zF"
+        ],
+        "destination": "V2/preSpike"
+    },
+    {
+        "class": "overwrite",
+        "sources": [
+            "z1/s"
+        ],
+        "destination": "V2/postSpike"
+    },
+    {
+        "class": "overwrite",
+        "sources": [
+            "z2_prev/zF"
+        ],
+        "destination": "V2/preTrace"
+    },
+    {
+        "class": "overwrite",
+        "sources": [
+            "g1/modulator"
+        ],
+        "destination": "V2/postTrace"
+    },
+    {
+        "class": "overwrite",
+        "sources": [
+            "z3_prev/zF"
+        ],
+        "destination": "V3y/preSpike"
+    },
+    {
+        "class": "overwrite",
+        "sources": [
+            "z2/s"
+        ],
+        "destination": "V3y/postSpike"
+    },
+    {
+        "class": "overwrite",
+        "sources": [
+            "z3_prev/zF"
+        ],
+        "destination": "V3y/preTrace"
+    },
+    {
+        "class": "overwrite",
+        "sources": [
+            "g2/modulator"
+        ],
+        "destination": "V3y/postTrace"
+    },
+    {
+        "class": "overwrite",
+        "sources": [
+            "z3_prev/zF"
+        ],
+        "destination": "V2y/preSpike"
+    },
+    {
+        "class": "overwrite",
+        "sources": [
+            "z1/s"
+        ],
+        "destination": "V2y/postSpike"
+    },
+    {
+        "class": "overwrite",
+        "sources": [
+            "z3_prev/zF"
+        ],
+        "destination": "V2y/preTrace"
+    },
+    {
+        "class": "overwrite",
+        "sources": [
+            "g1/modulator"
+        ],
+        "destination": "V2y/postTrace"
+    }
+]

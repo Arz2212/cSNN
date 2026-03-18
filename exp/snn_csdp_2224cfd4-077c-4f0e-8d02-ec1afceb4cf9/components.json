@@ -1,0 +1,514 @@
+{
+    "components": {
+        "/Circuit/z0": {
+            "class": "BernoulliCell",
+            "args": [
+                "z0"
+            ],
+            "kwargs": {
+                "n_units": 784,
+                "batch_size": 1
+            }
+        },
+        "/Circuit/W1": {
+            "class": "STDPSynapse",
+            "args": [
+                "W1"
+            ],
+            "kwargs": {
+                "shape": [
+                    784,
+                    1024
+                ],
+                "A_plus": 0.05,
+                "A_minus": 0.05,
+                "eta": 0.002,
+                "pretrace_target": 1.0,
+                "weight_init": {
+                    "dist": "uniform",
+                    "amin": -1.0,
+                    "amax": 1.0
+                },
+                "w_bound": 1.0,
+                "tau_w": 5.0
+            }
+        },
+        "/Circuit/z1": {
+            "class": "SLIFCell",
+            "args": [
+                "z1"
+            ],
+            "kwargs": {
+                "n_units": 1024,
+                "tau_m": 100.0,
+                "resist_m": 1.0,
+                "thr": 0.055,
+                "resist_inh": 0.0,
+                "refract_time": 0.0,
+                "thr_gain": 0.0,
+                "thr_leak": 0.0,
+                "rho_b": 0.001,
+                "sticky_spikes": false,
+                "thr_jitter": 0.025,
+                "batch_size": 1
+            }
+        },
+        "/Circuit/W2": {
+            "class": "CSDPSynapse",
+            "args": [
+                "W2"
+            ],
+            "kwargs": {
+                "shape": [
+                    1024,
+                    128
+                ],
+                "eta": 0.002,
+                "weight_init": {
+                    "dist": "uniform",
+                    "amin": -1.0,
+                    "amax": 1.0
+                },
+                "bias_init": null,
+                "w_bound": 1.0,
+                "is_nonnegative": false,
+                "w_decay": 5e-05,
+                "resist_scale": 0.1,
+                "optim_type": "adam",
+                "soft_bound": false
+            }
+        },
+        "/Circuit/z2": {
+            "class": "SLIFCell",
+            "args": [
+                "z2"
+            ],
+            "kwargs": {
+                "n_units": 128,
+                "tau_m": 100.0,
+                "resist_m": 1.0,
+                "thr": 0.055,
+                "resist_inh": 0.0,
+                "refract_time": 0.0,
+                "thr_gain": 0.0,
+                "thr_leak": 0.0,
+                "rho_b": 0.001,
+                "sticky_spikes": false,
+                "thr_jitter": 0.025,
+                "batch_size": 1
+            }
+        },
+        "/Circuit/V2": {
+            "class": "CSDPSynapse",
+            "args": [
+                "V2"
+            ],
+            "kwargs": {
+                "shape": [
+                    128,
+                    1024
+                ],
+                "eta": 0.002,
+                "weight_init": {
+                    "dist": "uniform",
+                    "amin": -1.0,
+                    "amax": 1.0
+                },
+                "bias_init": null,
+                "w_bound": 1.0,
+                "is_nonnegative": false,
+                "w_decay": 5e-05,
+                "resist_scale": 0.1,
+                "optim_type": "adam",
+                "soft_bound": false
+            }
+        },
+        "/Circuit/M1": {
+            "class": "CSDPSynapse",
+            "args": [
+                "M1"
+            ],
+            "kwargs": {
+                "shape": [
+                    1024,
+                    1024
+                ],
+                "eta": 0.002,
+                "weight_init": {
+                    "dist": "uniform",
+                    "amin": -1.0,
+                    "amax": 1.0
+                },
+                "bias_init": null,
+                "w_bound": 1.0,
+                "is_nonnegative": true,
+                "w_decay": 5e-05,
+                "resist_scale": 0.01,
+                "is_hollow": true,
+                "w_sign": -1.0,
+                "optim_type": "adam",
+                "soft_bound": false
+            }
+        },
+        "/Circuit/M2": {
+            "class": "CSDPSynapse",
+            "args": [
+                "M2"
+            ],
+            "kwargs": {
+                "shape": [
+                    128,
+                    128
+                ],
+                "eta": 0.002,
+                "weight_init": {
+                    "dist": "uniform",
+                    "amin": -1.0,
+                    "amax": 1.0
+                },
+                "bias_init": null,
+                "w_bound": 1.0,
+                "is_nonnegative": true,
+                "w_decay": 5e-05,
+                "resist_scale": 0.01,
+                "is_hollow": true,
+                "w_sign": -1.0,
+                "optim_type": "adam",
+                "soft_bound": false
+            }
+        },
+        "/Circuit/zy": {
+            "class": "SLIFCell",
+            "args": [
+                "zy"
+            ],
+            "kwargs": {
+                "n_units": 10,
+                "tau_m": 100.0,
+                "resist_m": 1.0,
+                "thr": 0.055,
+                "resist_inh": 0.0,
+                "refract_time": 0.0,
+                "thr_gain": 0.0,
+                "thr_leak": 0.0,
+                "rho_b": 0.001,
+                "sticky_spikes": false,
+                "thr_jitter": 0.025,
+                "batch_size": 1
+            }
+        },
+        "/Circuit/ey": {
+            "class": "MaskedErrorCell",
+            "args": [
+                "ey"
+            ],
+            "kwargs": {
+                "n_units": 10
+            }
+        },
+        "/Circuit/C2": {
+            "class": "HebbianSynapse",
+            "args": [
+                "C2"
+            ],
+            "kwargs": {
+                "shape": [
+                    1024,
+                    10
+                ],
+                "eta": 0.002,
+                "weight_init": {
+                    "dist": "uniform",
+                    "amin": -1.0,
+                    "amax": 1.0
+                },
+                "bias_init": null,
+                "resist_scale": 1.0,
+                "w_bound": 1.0,
+                "w_decay": 0.0,
+                "sign_value": -1.0,
+                "optim_type": "adam",
+                "pre_wght": 1.0,
+                "post_wght": 0.1,
+                "is_nonnegative": false
+            }
+        },
+        "/Circuit/C3": {
+            "class": "HebbianSynapse",
+            "args": [
+                "C3"
+            ],
+            "kwargs": {
+                "shape": [
+                    128,
+                    10
+                ],
+                "eta": 0.002,
+                "weight_init": {
+                    "dist": "uniform",
+                    "amin": -1.0,
+                    "amax": 1.0
+                },
+                "bias_init": null,
+                "resist_scale": 1.0,
+                "w_bound": 1.0,
+                "w_decay": 0.0,
+                "sign_value": -1.0,
+                "optim_type": "adam",
+                "pre_wght": 1.0,
+                "post_wght": 0.1,
+                "is_nonnegative": false
+            }
+        },
+        "/Circuit/zR": {
+            "class": "SLIFCell",
+            "args": [
+                "zR"
+            ],
+            "kwargs": {
+                "n_units": 784,
+                "tau_m": 100.0,
+                "resist_m": 1.0,
+                "thr": 0.055,
+                "resist_inh": 0.0,
+                "refract_time": 0.0,
+                "thr_gain": 0.0,
+                "thr_leak": 0.0,
+                "rho_b": 0.0,
+                "sticky_spikes": false,
+                "thr_jitter": 0.025,
+                "batch_size": 1
+            }
+        },
+        "/Circuit/eR": {
+            "class": "MaskedErrorCell",
+            "args": [
+                "eR"
+            ],
+            "kwargs": {
+                "n_units": 784
+            }
+        },
+        "/Circuit/R1": {
+            "class": "HebbianSynapse",
+            "args": [
+                "R1"
+            ],
+            "kwargs": {
+                "shape": [
+                    1024,
+                    784
+                ],
+                "eta": 0.002,
+                "weight_init": {
+                    "dist": "uniform",
+                    "amin": -1.0,
+                    "amax": 1.0
+                },
+                "bias_init": null,
+                "resist_scale": 1.0,
+                "w_bound": 1.0,
+                "w_decay": 0.0,
+                "sign_value": -1.0,
+                "optim_type": "adam",
+                "pre_wght": 1.0,
+                "post_wght": 0.1,
+                "is_nonnegative": false
+            }
+        },
+        "/Circuit/z3": {
+            "class": "BernoulliCell",
+            "args": [
+                "z3"
+            ],
+            "kwargs": {
+                "n_units": 10,
+                "batch_size": 1
+            }
+        },
+        "/Circuit/V3y": {
+            "class": "CSDPSynapse",
+            "args": [
+                "V3y"
+            ],
+            "kwargs": {
+                "shape": [
+                    10,
+                    128
+                ],
+                "eta": 0.002,
+                "weight_init": {
+                    "dist": "uniform",
+                    "amin": -1.0,
+                    "amax": 1.0
+                },
+                "bias_init": null,
+                "w_bound": 1.0,
+                "is_nonnegative": false,
+                "w_decay": 5e-05,
+                "resist_scale": 0.1,
+                "optim_type": "adam",
+                "soft_bound": false
+            }
+        },
+        "/Circuit/V2y": {
+            "class": "CSDPSynapse",
+            "args": [
+                "V2y"
+            ],
+            "kwargs": {
+                "shape": [
+                    10,
+                    1024
+                ],
+                "eta": 0.002,
+                "weight_init": {
+                    "dist": "uniform",
+                    "amin": -1.0,
+                    "amax": 1.0
+                },
+                "bias_init": null,
+                "w_bound": 1.0,
+                "is_nonnegative": false,
+                "w_decay": 5e-05,
+                "resist_scale": 0.1,
+                "optim_type": "adam",
+                "soft_bound": false
+            }
+        },
+        "/Circuit/g1": {
+            "class": "GoodnessModCell",
+            "args": [
+                "g1"
+            ],
+            "kwargs": {
+                "n_units": 1024,
+                "threshold": 10.0,
+                "use_dyn_threshold": false
+            }
+        },
+        "/Circuit/g2": {
+            "class": "GoodnessModCell",
+            "args": [
+                "g2"
+            ],
+            "kwargs": {
+                "n_units": 128,
+                "threshold": 10.0,
+                "use_dyn_threshold": false
+            }
+        },
+        "/Circuit/z0_prev": {
+            "class": "RateCell",
+            "args": [
+                "z0_prev"
+            ],
+            "kwargs": {
+                "n_units": 784,
+                "tau_m": 0.0,
+                "prior": [
+                    "gaussian",
+                    0.0
+                ],
+                "batch_size": 1
+            }
+        },
+        "/Circuit/z1_prev": {
+            "class": "RateCell",
+            "args": [
+                "z1_prev"
+            ],
+            "kwargs": {
+                "n_units": 1024,
+                "tau_m": 0.0,
+                "prior": [
+                    "gaussian",
+                    0.0
+                ],
+                "batch_size": 1
+            }
+        },
+        "/Circuit/z2_prev": {
+            "class": "RateCell",
+            "args": [
+                "z2_prev"
+            ],
+            "kwargs": {
+                "n_units": 128,
+                "tau_m": 0.0,
+                "prior": [
+                    "gaussian",
+                    0.0
+                ],
+                "batch_size": 1
+            }
+        },
+        "/Circuit/z3_prev": {
+            "class": "RateCell",
+            "args": [
+                "z3_prev"
+            ],
+            "kwargs": {
+                "n_units": 10,
+                "tau_m": 0.0,
+                "prior": [
+                    "gaussian",
+                    0.0
+                ],
+                "batch_size": 1
+            }
+        },
+        "/Circuit/tr0": {
+            "class": "VarTrace",
+            "args": [
+                "tr0"
+            ],
+            "kwargs": {
+                "n_units": 784,
+                "tau_tr": 13.0,
+                "decay_type": "lin",
+                "batch_size": 1,
+                "a_delta": 0.0
+            }
+        },
+        "/Circuit/tr1": {
+            "class": "VarTrace",
+            "args": [
+                "tr1"
+            ],
+            "kwargs": {
+                "n_units": 1024,
+                "tau_tr": 13.0,
+                "decay_type": "lin",
+                "a_delta": 0.0,
+                "batch_size": 1
+            }
+        },
+        "/Circuit/tr2": {
+            "class": "VarTrace",
+            "args": [
+                "tr2"
+            ],
+            "kwargs": {
+                "n_units": 128,
+                "tau_tr": 13.0,
+                "decay_type": "lin",
+                "a_delta": 0.0,
+                "batch_size": 1
+            }
+        },
+        "/Circuit/tr3": {
+            "class": "VarTrace",
+            "args": [
+                "tr3"
+            ],
+            "kwargs": {
+                "n_units": 10,
+                "tau_tr": 13.0,
+                "decay_type": "lin",
+                "a_delta": 0.0,
+                "batch_size": 1
+            }
+        }
+    }
+}
