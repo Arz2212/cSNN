@@ -1,7 +1,7 @@
 from jax import numpy as jnp, random, nn, jit
 import sys, getopt as gopt, optparse, time
 
-from csdp_model import CSDP_SNN as Model
+from modell_no_flai import CSDP_SNN as Model
 ## bring in ngc-learn analysis tools
 from ngclearn.utils.metric_utils import measure_ACC, measure_CatNLL
 
@@ -116,7 +116,7 @@ eta_w = 0.002  ## learning rate -- CSDP/hebbian update modulation
 dt = 3. # ms ## integration time constant
 model = Model(subkeys[1], in_dim=x_dim, out_dim=y_dim, hid_dim=hid_dim, hid_dim2=hid_dim2,
               batch_size=batch_size, eta_w=eta_w, T=T, dt=dt, algo_type=algo_type,
-              exp_dir=exp_dir, learn_recon=learn_recon)
+              exp_dir=exp_dir, learn_recon=learn_recon, A_p=0, A_m=0)
 model.save_to_disk(save_dir="custom{}".format(seed)) # save final state of synapses to disk
 ########################################################################
 
