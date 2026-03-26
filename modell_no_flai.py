@@ -154,7 +154,7 @@ class CSDP_SNN():
 
                 # W2 теперь соединяет in_dim напрямую с hid_dim2
                 self.W2 = CSDPSynapse(
-                    name="W2", shape=(in_dim, hid_dim2), eta=eta_w,
+                    name="W2", shape=(in_dim, hid_dim2), eta   =eta_w,
                     weight_init=weightInit, bias_init=biasInit, w_bound=1.,
                     is_nonnegative=nonneg_w, w_decay=w_decay, resist_scale=R_m,
                     optim_type=optim_type, soft_bound=soft_bound, key=subkeys[3]

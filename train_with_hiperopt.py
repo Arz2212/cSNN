@@ -184,7 +184,6 @@ if __name__ == "__main__":
         else:
             base_config[opt_name] = arg.strip()
 
-    # Убираем working_dir, чтобы не мучить Ray копированием гигабайтов данных
     runtime_env = {
         "env_vars": {
             "XLA_PYTHON_CLIENT_PREALLOCATE": "false",
@@ -192,11 +191,15 @@ if __name__ == "__main__":
         }
     }
     ray.init(runtime_env=runtime_env)
+    base_config["dataX"] = os.path.abspath(base_config["dataX"])
+    base_config["dataY"] = os.path.abspath(base_config["dataY"])
+    base_config["devX"] = os.path.abspath(base_config["devX"])
+    base_config["devY"] = os.path.abspath(base_config["devY"])
 
     search_space = {
         **base_config,
-        "A_plus": tune.uniform(0.001, 1.0),
-        "A_minus": tune.uniform(0.001, 1.0)
+        "A_plus": tune.loguniform(1e-8, 0.2),
+        "A_minus": tune.loguniform(1e-8, 0.2)
     }
 
     from ray.tune.search.hyperopt import HyperOptSearch
@@ -205,14 +208,13 @@ if __name__ == "__main__":
     sim_start_time = time.time()
 
     tuner = tune.Tuner(
-        # Используем мощь вашего Ryzen и RTX 3090
-        tune.with_resources(train_model, resources={"cpu": 3, "gpu": 0.25}),
+        tune.with_resources(train_model, resources={"cpu": 4, "gpu": 0.2}),
         tune_config=tune.TuneConfig(
             metric="loss",
             mode="min",
             search_alg=algo,
-            num_samples=100,
-            max_concurrent_trials=4,  # 4 воркера одновременно
+            num_samples=5,
+            max_concurrent_trials=5,
         ),
         param_space=search_space,
     )
