@@ -1,7 +1,7 @@
 from jax import numpy as jnp, random, nn, jit
 import sys, getopt as gopt, optparse, time
 
-from modell_no_flai import CSDP_SNN as Model
+from csdp_model import CSDP_SNN as Model
 ## bring in ngc-learn analysis tools
 from ngclearn.utils.metric_utils import measure_ACC, measure_CatNLL
 
@@ -110,7 +110,7 @@ dkey, *subkeys = random.split(dkey, 10)
 hid_dim = nZ1
 hid_dim2 = nZ2
 out_dim = y_dim ## output dimensionality
-learn_recon = True 
+learn_recon = True
 T = 50
 eta_w = 0.002  ## learning rate -- CSDP/hebbian update modulation
 dt = 3. # ms ## integration time constant
@@ -142,7 +142,7 @@ def eval_model(model, Xdev, Ydev, batch_size, verbosity=1):
             Xb, Yb, dkey=dkey, adapt_synapses=False)
         ## record metric measurements (note: must also un-normalizing them here)
         _nll = measure_CatNLL(yMu, Yb) * Xb.shape[0]
-        _acc = measure_ACC(yMu, Yb) * Yb.shape[0] 
+        _acc = measure_ACC(yMu, Yb) * Yb.shape[0]
         _bce = measure_BCE(xMu, Xb, preserve_batch=False) * Xb.shape[0]
         _mse = measure_MSE(xMu, Xb, preserve_batch=False) * Xb.shape[0]
         nll += _nll
@@ -236,7 +236,7 @@ for i in range(num_iter):
     for j in range(n_batches):
         dkey, *subkeys = random.split(dkey, 2)
         ## sample mini-batch of patterns
-        idx = j * batch_size 
+        idx = j * batch_size
         s_ptr = idx
         e_ptr = idx + batch_size
         if e_ptr > X.shape[0]:
