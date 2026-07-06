@@ -1,0 +1,2 @@
+accuracy,timestamp,checkpoint_dir_name,done,training_iteration,trial_id,date,time_this_iter_s,time_total_s,pid,hostname,node_ip,time_since_restore,iterations_since_restore
+1.0,1778594156,,False,1,d3e25ada,2026-05-12_16-55-56,47.050498485565186,47.050498485565186,62400,thinkbook,172.18.0.1,47.050498485565186,1

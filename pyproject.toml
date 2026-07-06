@@ -1,0 +1,16 @@
+[project]
+name = "my-project"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "hyperopt>=0.2.7",
+    "numpy>=2.2.6",
+    "ray[tune]>=2.52.1",
+    "spikingjelly>=0.0.0.0.14",
+    "torch>=2.11.0",
+]
+
+[[tool.uv.index]]
+url = "https://download.pytorch.org/whl/cpu"
