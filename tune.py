@@ -11,8 +11,9 @@ from ray import tune
 from ray.tune.search.hyperopt import HyperOptSearch
 from hyperopt import hp
 
-DEVICE = torch.device("cpu")
-torch.set_num_threads(1)
+DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+if DEVICE.type == "cpu":
+    torch.set_num_threads(1)
 
 # ══════════════════════════════════════════════════════════════════════════════
 #  Модель (из main.py)
@@ -128,7 +129,8 @@ class XOR_SNN(nn.Module):
 
         y_target = label_1hot if (labels is not None and sup_learner is not None and phase == 1.0) else None
 
-        hub1, hub2 = torch.zeros(B, 1), torch.zeros(B, 1)
+        hub1 = torch.zeros(B, 1, device=x.device)
+        hub2 = torch.zeros(B, 1, device=x.device)
         decay_hub = 1.0 / self.tau_hub
 
         for t in range(T):
@@ -180,8 +182,9 @@ def accuracy(net, loader, T):
     net.eval()
     ok, total = 0, 0
     for x, y in loader:
+        x, y = x.to(DEVICE), y.to(DEVICE)
         out = net(x, T, labels=y)
-        ok += (out.sum(0).argmax(1) == y).sum().item()
+        ok += (out.sum(0).argmax(1).cpu() == y.cpu()).sum().item()
         total += y.size(0)
     return ok / total
 
@@ -195,7 +198,7 @@ def avg_accuracy(net, loader, T, n_evals=10):
 
 TRAIN_ONLY_EPOCHS = 100   # эпохи только обучения (без замера точности)
 TRAIN_EVAL_EPOCHS = 30    # эпохи обучения + замер точности (усредняется)
-T                 = 1000
+T                 = 100
 BATCH             = 64
 
 
@@ -232,15 +235,18 @@ def objective(config):
     ]
     sup = SupervisedLearner(net.fc3, alpha=alpha_sup, w_clip=w_clip)
 
+    net.to(DEVICE)
+
     # ── Фаза 1: 100 эпох чистого обучения ──
     for epoch in range(TRAIN_ONLY_EPOCHS):
         net.train()
         for xb, yb in train_ldr:
+            xb, yb = xb.to(DEVICE), yb.to(DEVICE)
             net(xb, T, csdp_learners=csdp, sup_learner=sup, phase=1.0, labels=yb)
             for lrn in csdp:
                 lrn.reset()
             wrong = 1 - yb
-            net(xb, T, csdp_learners=csdp, sup_learner=None, phase=0.0, labels=wrong)
+            net(xb, T, csdp_learners=csdp, sup_learner=None, phase=0.0, labels=wrong.to(DEVICE))
             for lrn in csdp:
                 lrn.reset()
 
@@ -250,11 +256,12 @@ def objective(config):
         # обучение (одна эпоха)
         net.train()
         for xb, yb in train_ldr:
+            xb, yb = xb.to(DEVICE), yb.to(DEVICE)
             net(xb, T, csdp_learners=csdp, sup_learner=sup, phase=1.0, labels=yb)
             for lrn in csdp:
                 lrn.reset()
             wrong = 1 - yb
-            net(xb, T, csdp_learners=csdp, sup_learner=None, phase=0.0, labels=wrong)
+            net(xb, T, csdp_learners=csdp, sup_learner=None, phase=0.0, labels=wrong.to(DEVICE))
             for lrn in csdp:
                 lrn.reset()
         # замер точности (без градиентов, обучение не идёт во время замера)
@@ -286,8 +293,9 @@ search_space = {
 if __name__ == "__main__":
     import ray
 
-    N_CPUS = int(os.environ.get("RAY_NUM_CPUS", 14))
-    ray.init(num_cpus=N_CPUS, ignore_reinit_error=True)
+    N_CPUS = int(os.environ.get("RAY_NUM_CPUS", 10))
+    N_GPUS = 1 if torch.cuda.is_available() else 0
+    ray.init(num_cpus=N_CPUS, num_gpus=N_GPUS, ignore_reinit_error=True)
 
     algo = HyperOptSearch(
         search_space,
@@ -297,11 +305,11 @@ if __name__ == "__main__":
     )
 
     tuner = tune.Tuner(
-        tune.with_resources(objective, {"cpu": 1}),
+        tune.with_resources(objective, {"cpu": 1, "gpu": 0.11}),
         tune_config=tune.TuneConfig(
             search_alg=algo,
             num_samples=10000,
-            max_concurrent_trials=N_CPUS - 2,
+            max_concurrent_trials=9,
         ),
         run_config=tune.RunConfig(
             name="xor_snn_hyperopt",
